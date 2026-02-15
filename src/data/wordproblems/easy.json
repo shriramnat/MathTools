@@ -1,0 +1,2605 @@
+[
+  {
+    "id": "E1",
+    "difficulty": "easy",
+    "text": "A puppy has 3 bones and gets 2 more. How many bones does it have?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 2"
+  },
+  {
+    "id": "E2",
+    "difficulty": "easy",
+    "text": "2 kittens are playing, and 4 more join. How many kittens are there?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 + 4"
+  },
+  {
+    "id": "E3",
+    "difficulty": "easy",
+    "text": "A bird finds 5 seeds and eats 1. How many seeds are left?",
+    "answer": 4,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "5 - 1"
+  },
+  {
+    "id": "E4",
+    "difficulty": "easy",
+    "text": "A squirrel collects 6 nuts and drops 2. How many nuts does it keep?",
+    "answer": 4,
+    "operation": [
+      "s"
+    ],
+    "solution": "6 - 2"
+  },
+  {
+    "id": "E5",
+    "difficulty": "easy",
+    "text": "A turtle sees 7 fish and then sees 2 more. How many fish does it see?",
+    "answer": 9,
+    "operation": [
+      "a"
+    ],
+    "solution": "7 + 2"
+  },
+  {
+    "id": "E6",
+    "difficulty": "easy",
+    "text": "An astronaut counts 4 stars and then spots 3 more. How many stars are there?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 3"
+  },
+  {
+    "id": "E7",
+    "difficulty": "easy",
+    "text": "A rocket has 8 buttons. The engineer adds 1 more. How many buttons now?",
+    "answer": 9,
+    "operation": [
+      "a"
+    ],
+    "solution": "8 + 1"
+  },
+  {
+    "id": "E8",
+    "difficulty": "easy",
+    "text": "A robot on Mars finds 6 rocks but loses 1. How many rocks remain?",
+    "answer": 5,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "6 - 1"
+  },
+  {
+    "id": "E9",
+    "difficulty": "easy",
+    "text": "A space rover collects 2 samples and later collects 5 more. How many samples total?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 + 5"
+  },
+  {
+    "id": "E10",
+    "difficulty": "easy",
+    "text": "The moon has 9 craters but 3 are hidden. How many are still visible?",
+    "answer": 6,
+    "operation": [
+      "s"
+    ],
+    "solution": "9 - 3"
+  },
+  {
+    "id": "E11",
+    "difficulty": "easy",
+    "text": "A child scores 3 goals in soccer and then scores 2 more. How many goals total?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 2"
+  },
+  {
+    "id": "E12",
+    "difficulty": "easy",
+    "text": "A basketball team has 5 balls and buys 3 more. How many balls do they have?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 3"
+  },
+  {
+    "id": "E13",
+    "difficulty": "easy",
+    "text": "A baseball player hits 7 balls but misses 2. How many hits does he have?",
+    "answer": 7,
+    "operation": [
+      "s"
+    ],
+    "solution": "7 - 2"
+  },
+  {
+    "id": "E14",
+    "difficulty": "easy",
+    "text": "There are 4 kids running a race. 3 more join. How many runners now?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 3"
+  },
+  {
+    "id": "E15",
+    "difficulty": "easy",
+    "text": "A swimmer completes 6 laps and then 1 more. How many laps total?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "6 + 1"
+  },
+  {
+    "id": "E16",
+    "difficulty": "easy",
+    "text": "A child hangs 5 ornaments on a tree and adds 2 more. How many ornaments are there?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 2"
+  },
+  {
+    "id": "E17",
+    "difficulty": "easy",
+    "text": "There are 6 candy canes in a bowl. A kid eats 1. How many remain?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "6 - 1"
+  },
+  {
+    "id": "E18",
+    "difficulty": "easy",
+    "text": "A snowman has 3 buttons. Someone adds 3 more. How many buttons now?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 3"
+  },
+  {
+    "id": "E19",
+    "difficulty": "easy",
+    "text": "A basket has 8 Easter eggs. 2 fall out. How many eggs stay inside?",
+    "answer": 6,
+    "operation": [
+      "s"
+    ],
+    "solution": "8 - 2"
+  },
+  {
+    "id": "E20",
+    "difficulty": "easy",
+    "text": "A child lights 2 holiday candles and then lights 4 more. How many candles are lit?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 + 4"
+  },
+  {
+    "id": "E21",
+    "difficulty": "easy",
+    "text": "A kid has 4 toy robots and gets 2 more. How many robots now?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 2"
+  },
+  {
+    "id": "E22",
+    "difficulty": "easy",
+    "text": "There are 3 teddy bears on a shelf. The child adds 3 more. How many now?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 3"
+  },
+  {
+    "id": "E23",
+    "difficulty": "easy",
+    "text": "A girl has 5 toy trains but loses 1. How many trains left?",
+    "answer": 4,
+    "operation": [
+      "s"
+    ],
+    "solution": "5 - 1"
+  },
+  {
+    "id": "E24",
+    "difficulty": "easy",
+    "text": "A boy builds with 7 blocks and adds 2 more. How many blocks total?",
+    "answer": 9,
+    "operation": [
+      "a"
+    ],
+    "solution": "7 + 2"
+  },
+  {
+    "id": "E25",
+    "difficulty": "easy",
+    "text": "A child has 9 crayons but shares 3. How many crayons remain?",
+    "answer": 6,
+    "operation": [
+      "s"
+    ],
+    "solution": "9 - 3"
+  },
+  {
+    "id": "E26",
+    "difficulty": "easy",
+    "text": "A red car has 4 wheels and a toy truck has 4 wheels. How many wheels in total?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 4"
+  },
+  {
+    "id": "E27",
+    "difficulty": "easy",
+    "text": "A kid has 6 toy cars and gets 3 more. How many cars now?",
+    "answer": 9,
+    "operation": [
+      "a"
+    ],
+    "solution": "6 + 3"
+  },
+  {
+    "id": "E28",
+    "difficulty": "easy",
+    "text": "There are 8 cars in a race. 2 slow down and leave. How many are still racing?",
+    "answer": 6,
+    "operation": [
+      "s"
+    ],
+    "solution": "8 - 2"
+  },
+  {
+    "id": "E29",
+    "difficulty": "easy",
+    "text": "A garage has 5 cars. One drives away. How many cars remain?",
+    "answer": 4,
+    "operation": [
+      "s"
+    ],
+    "solution": "5"
+  },
+  {
+    "id": "E30",
+    "difficulty": "easy",
+    "text": "A boy sees 7 blue cars and 1 red car. How many cars does he see?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "7 - 1"
+  },
+  {
+    "id": "E31",
+    "difficulty": "easy",
+    "text": "Pikachu finds 3 berries. Ash gives him 3 more. How many berries now?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 3"
+  },
+  {
+    "id": "E32",
+    "difficulty": "easy",
+    "text": "Charmander sees 4 small rocks and 2 big ones. How many rocks total?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 - 2"
+  },
+  {
+    "id": "E33",
+    "difficulty": "easy",
+    "text": "Squirtle splashes 5 kids but 1 runs away. How many kids stay?",
+    "answer": 4,
+    "operation": [
+      "s"
+    ],
+    "solution": "5 - 1"
+  },
+  {
+    "id": "E34",
+    "difficulty": "easy",
+    "text": "Eevee has 6 friends join her. Then 2 more arrive. How many friends in total?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "6 + 2"
+  },
+  {
+    "id": "E35",
+    "difficulty": "easy",
+    "text": "Bulbasaur has 7 leaves and drops 2. How many leaves remain?",
+    "answer": 5,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "7 - 2"
+  },
+  {
+    "id": "E36",
+    "difficulty": "easy",
+    "text": "Bluey has 3 toys and Bingo brings 4 more. How many toys are there?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 4"
+  },
+  {
+    "id": "E37",
+    "difficulty": "easy",
+    "text": "Dad makes 5 pancakes but Bluey eats 1. How many pancakes left?",
+    "answer": 4,
+    "operation": [
+      "s"
+    ],
+    "solution": "5 - 1"
+  },
+  {
+    "id": "E38",
+    "difficulty": "easy",
+    "text": "Bluey and Bingo find 6 butterflies and then spot 2 more. How many butterflies?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "6 + 2"
+  },
+  {
+    "id": "E39",
+    "difficulty": "easy",
+    "text": "Bluey has 8 crayons and gives 2 to Bingo. How many remain?",
+    "answer": 6,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "8 - 2"
+  },
+  {
+    "id": "E40",
+    "difficulty": "easy",
+    "text": "Bingo has 4 blocks and Bluey adds 4 more. How many blocks now?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 4"
+  },
+  {
+    "id": "E41",
+    "difficulty": "easy",
+    "text": "Numberblock One meets Numberblock Two. How many blocks total?",
+    "answer": 3,
+    "operation": [
+      "a"
+    ],
+    "solution": ""
+  },
+  {
+    "id": "E42",
+    "difficulty": "easy",
+    "text": "Numberblock Four splits off 1 block. How many blocks remain?",
+    "answer": 3,
+    "operation": [
+      "s"
+    ],
+    "solution": "1"
+  },
+  {
+    "id": "E43",
+    "difficulty": "easy",
+    "text": "Numberblock Five finds 3 stars. How many stars does she have?",
+    "answer": 3,
+    "operation": [
+      "a"
+    ],
+    "solution": "3"
+  },
+  {
+    "id": "E44",
+    "difficulty": "easy",
+    "text": "Numberblock Three gets 3 balloons. How many balloons total?",
+    "answer": 3,
+    "operation": [
+      "a"
+    ],
+    "solution": "3"
+  },
+  {
+    "id": "E45",
+    "difficulty": "easy",
+    "text": "Numberblock Six rolls 4 dice and then 2 more. How many dice total?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 2"
+  },
+  {
+    "id": "E46",
+    "difficulty": "easy",
+    "text": "A bunny picks 2 carrots and later picks 5 more. How many carrots?",
+    "answer": 7,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "2 + 5"
+  },
+  {
+    "id": "E47",
+    "difficulty": "easy",
+    "text": "A farm has 5 cows and 3 horses. How many animals total?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 - 3"
+  },
+  {
+    "id": "E48",
+    "difficulty": "easy",
+    "text": "A duck swims with 6 ducklings. 1 goes the other way. How many stay?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "6 - 1"
+  },
+  {
+    "id": "E49",
+    "difficulty": "easy",
+    "text": "A frog jumps onto 7 lily pads but skips 2. How many does it land on?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "7 - 2"
+  },
+  {
+    "id": "E50",
+    "difficulty": "easy",
+    "text": "A cat sees 9 leaves falling but stops counting after 3 fall. How many still falling?",
+    "answer": 6,
+    "operation": [
+      "s"
+    ],
+    "solution": "9 - 3"
+  },
+  {
+    "id": "E51",
+    "difficulty": "easy",
+    "text": "A rocket has 2 astronauts inside and 5 more board. How many astronauts total?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 + 5"
+  },
+  {
+    "id": "E52",
+    "difficulty": "easy",
+    "text": "A space alien sees 3 glowing rocks and then 3 more. How many rocks?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 3"
+  },
+  {
+    "id": "E53",
+    "difficulty": "easy",
+    "text": "A space shuttle carries 4 boxes and adds 2 more. How many boxes total?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 2"
+  },
+  {
+    "id": "E54",
+    "difficulty": "easy",
+    "text": "A moon base has 7 robots. 1 goes offline. How many stay online?",
+    "answer": 6,
+    "operation": [
+      "s"
+    ],
+    "solution": "7 - 1"
+  },
+  {
+    "id": "E55",
+    "difficulty": "easy",
+    "text": "A starship launches 9 probes and 1 returns. How many probes remain launched?",
+    "answer": 8,
+    "operation": [
+      "s"
+    ],
+    "solution": "9 - 1"
+  },
+  {
+    "id": "E56",
+    "difficulty": "easy",
+    "text": "A child kicks 3 soccer balls and then kicks 3 more. How many kicks total?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 3"
+  },
+  {
+    "id": "E57",
+    "difficulty": "easy",
+    "text": "A tennis player has 8 balls but loses 2. How many left?",
+    "answer": 6,
+    "operation": [
+      "s"
+    ],
+    "solution": "8 - 2"
+  },
+  {
+    "id": "E58",
+    "difficulty": "easy",
+    "text": "There are 2 cones on the field. The coach adds 4 more. How many cones now?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 + 4"
+  },
+  {
+    "id": "E59",
+    "difficulty": "easy",
+    "text": "A runner takes 7 steps and then 1 more. How many steps in total?",
+    "answer": 8,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "7 + 1"
+  },
+  {
+    "id": "E60",
+    "difficulty": "easy",
+    "text": "A hockey team has 6 sticks but breaks 1. How many sticks remain?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "6 - 1"
+  },
+  {
+    "id": "E61",
+    "difficulty": "easy",
+    "text": "A pumpkin patch has 5 pumpkins. Kids bring 4 more. How many pumpkins now?",
+    "answer": 9,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 4"
+  },
+  {
+    "id": "E62",
+    "difficulty": "easy",
+    "text": "A child decorates 6 cookies and eats 1. How many cookies decorated?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "6 - 1"
+  },
+  {
+    "id": "E63",
+    "difficulty": "easy",
+    "text": "There are 3 presents under a tree and 2 more are added. How many presents?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 2"
+  },
+  {
+    "id": "E64",
+    "difficulty": "easy",
+    "text": "A snowflake falls on 4 kids' gloves and then on 3 more. How many gloves get snow?",
+    "answer": 7,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "4 + 3"
+  },
+  {
+    "id": "E65",
+    "difficulty": "easy",
+    "text": "A child finds 8 candy wrappers and throws away 3. How many left to pick up?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "8 + 3"
+  },
+  {
+    "id": "E66",
+    "difficulty": "easy",
+    "text": "A toy box has 7 cars and 2 trucks. How many vehicles total?",
+    "answer": 9,
+    "operation": [
+      "a"
+    ],
+    "solution": "7 - 2"
+  },
+  {
+    "id": "E67",
+    "difficulty": "easy",
+    "text": "A kid lines up 5 toy dinosaurs and adds 3 more. How many dinosaurs?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 3"
+  },
+  {
+    "id": "E68",
+    "difficulty": "easy",
+    "text": "A child builds with 6 LEGO bricks and attaches 2 more. How many bricks total?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "6 + 2"
+  },
+  {
+    "id": "E69",
+    "difficulty": "easy",
+    "text": "A puzzle has 9 pieces but 1 is missing. How many pieces are left?",
+    "answer": 8,
+    "operation": [
+      "s"
+    ],
+    "solution": "9 - 1"
+  },
+  {
+    "id": "E70",
+    "difficulty": "easy",
+    "text": "A kid has 3 balloons and gets 4 more. How many balloons now?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 4"
+  },
+  {
+    "id": "Q1",
+    "difficulty": "easy",
+    "text": "A child has 3 apples and gets 2 more. How many apples total?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 2"
+  },
+  {
+    "id": "Q2",
+    "difficulty": "easy",
+    "text": "A basket has 6 bananas and 1 falls out. How many bananas remain?",
+    "answer": 5,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "6 - 1"
+  },
+  {
+    "id": "Q3",
+    "difficulty": "easy",
+    "text": "A kid buys 4 cupcakes and then buys 3 more. How many cupcakes now?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 3"
+  },
+  {
+    "id": "Q4",
+    "difficulty": "easy",
+    "text": "A plate has 8 cookies. A child eats 2. How many cookies left?",
+    "answer": 6,
+    "operation": [
+      "s"
+    ],
+    "solution": "8 - 2"
+  },
+  {
+    "id": "Q5",
+    "difficulty": "easy",
+    "text": "A bowl has 5 strawberries and 5 blueberries. How many fruits total?",
+    "answer": 10,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 - 5"
+  },
+  {
+    "id": "Q11",
+    "difficulty": "easy",
+    "text": "A family lights 3 festival lanterns and then lights 4 more. How many lanterns total?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 4"
+  },
+  {
+    "id": "Q12",
+    "difficulty": "easy",
+    "text": "A holiday parade has 6 floats. 2 more join. How many floats now?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "6 + 2"
+  },
+  {
+    "id": "Q13",
+    "difficulty": "easy",
+    "text": "A child decorates 5 pumpkins, then decorates 2 more. How many pumpkins decorated?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 2"
+  },
+  {
+    "id": "Q14",
+    "difficulty": "easy",
+    "text": "There are 4 fireworks in the sky and 3 more launch. How many fireworks total?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 3"
+  },
+  {
+    "id": "Q15",
+    "difficulty": "easy",
+    "text": "A kid collects 7 holiday stickers and gets 1 more. How many stickers total?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "7 + 1"
+  },
+  {
+    "id": "Q21",
+    "difficulty": "easy",
+    "text": "A drawer has 5 spoons and 5 forks. How many utensils total?",
+    "answer": 10,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 - 5"
+  },
+  {
+    "id": "Q22",
+    "difficulty": "easy",
+    "text": "A kitchen has 6 bowls. A child sets 2 on the table. How many are left in the kitchen?",
+    "answer": 4,
+    "operation": [
+      "s"
+    ],
+    "solution": "6 - 2"
+  },
+  {
+    "id": "Q23",
+    "difficulty": "easy",
+    "text": "A cook uses 3 plates and then takes 2 more. How many plates does the cook have?",
+    "answer": 5,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "3 + 2"
+  },
+  {
+    "id": "Q24",
+    "difficulty": "easy",
+    "text": "A table has 7 cups. 1 cup falls. How many cups remain on the table?",
+    "answer": 6,
+    "operation": [
+      "s"
+    ],
+    "solution": "7 - 1"
+  },
+  {
+    "id": "Q25",
+    "difficulty": "easy",
+    "text": "A kitchen counter has 4 pans and someone adds 3 more. How many pans now?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 3"
+  },
+  {
+    "id": "Q31",
+    "difficulty": "easy",
+    "text": "A child has 3 books and gets 4 more. How many books now?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 4"
+  },
+  {
+    "id": "Q32",
+    "difficulty": "easy",
+    "text": "A classroom shelf has 6 books. A teacher adds 2 more. How many books total?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "6 + 2"
+  },
+  {
+    "id": "Q33",
+    "difficulty": "easy",
+    "text": "A kid reads 2 books in the morning and 3 at night. How many books read?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 - 3"
+  },
+  {
+    "id": "Q34",
+    "difficulty": "easy",
+    "text": "A library has 9 storybooks. 1 is borrowed. How many remain?",
+    "answer": 8,
+    "operation": [
+      "s"
+    ],
+    "solution": "9 - 1"
+  },
+  {
+    "id": "Q35",
+    "difficulty": "easy",
+    "text": "A child finds 5 comics and then finds 2 more. How many comics total?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 2"
+  },
+  {
+    "id": "Q41",
+    "difficulty": "easy",
+    "text": "A pencil box has 5 pencils. A child adds 3 more. How many pencils now?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 3"
+  },
+  {
+    "id": "Q42",
+    "difficulty": "easy",
+    "text": "A child has 7 pencils but loses 2. How many pencils remain?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "7 - 2"
+  },
+  {
+    "id": "Q43",
+    "difficulty": "easy",
+    "text": "A pack has 6 pencils and 1 pen. How many writing tools total?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "6 - 1"
+  },
+  {
+    "id": "Q44",
+    "difficulty": "easy",
+    "text": "A student finds 4 colored pencils and then finds 3 more. How many now?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 3"
+  },
+  {
+    "id": "Q45",
+    "difficulty": "easy",
+    "text": "A kid sharpens 5 pencils but 1 breaks. How many sharpened pencils remain?",
+    "answer": 4,
+    "operation": [
+      "s"
+    ],
+    "solution": "5 - 1"
+  },
+  {
+    "id": "Q51",
+    "difficulty": "easy",
+    "text": "A kid has 3 pens and buys 2 more. How many pens now?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 2"
+  },
+  {
+    "id": "Q52",
+    "difficulty": "easy",
+    "text": "A desk has 4 blue pens and someone adds 4 black pens. How many pens total?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 4"
+  },
+  {
+    "id": "Q53",
+    "difficulty": "easy",
+    "text": "A student loses 1 of their 7 pens. How many remain?",
+    "answer": 6,
+    "operation": [
+      "s"
+    ],
+    "solution": "1 - 7"
+  },
+  {
+    "id": "Q54",
+    "difficulty": "easy",
+    "text": "A child finds 6 pens and gives 1 to a friend. How many remain?",
+    "answer": 5,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "6 + 1"
+  },
+  {
+    "id": "Q55",
+    "difficulty": "easy",
+    "text": "A kid has 5 gel pens and gets 3 more. How many gel pens now?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 3"
+  },
+  {
+    "id": "Q61",
+    "difficulty": "easy",
+    "text": "There are 5 doughnuts and 3 more are added. How many doughnuts total?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 3"
+  },
+  {
+    "id": "Q62",
+    "difficulty": "easy",
+    "text": "A kid has 4 sandwiches and eats 1. How many sandwiches left?",
+    "answer": 3,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "4 - 1"
+  },
+  {
+    "id": "Q63",
+    "difficulty": "easy",
+    "text": "A bowl has 7 grapes. A child eats 2. How many grapes remain?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "7 - 2"
+  },
+  {
+    "id": "Q64",
+    "difficulty": "easy",
+    "text": "A tray has 6 slices of pizza. Kids add 2 more. How many slices now?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "6 + 2"
+  },
+  {
+    "id": "Q65",
+    "difficulty": "easy",
+    "text": "A smoothie cup has 5 strawberries and 4 bananas. How many fruits inside?",
+    "answer": 9,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 - 4"
+  },
+  {
+    "id": "Q71",
+    "difficulty": "easy",
+    "text": "A Holi celebration has 5 color packets, and 4 more are brought. How many packets total?",
+    "answer": 9,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 4"
+  },
+  {
+    "id": "Q72",
+    "difficulty": "easy",
+    "text": "A Christmas tree has 7 ornaments. Kids add 2 more. How many ornaments now?",
+    "answer": 9,
+    "operation": [
+      "a"
+    ],
+    "solution": "7 + 2"
+  },
+  {
+    "id": "Q73",
+    "difficulty": "easy",
+    "text": "A festival stand displays 6 flags, then adds 3 more. How many flags now?",
+    "answer": 9,
+    "operation": [
+      "a"
+    ],
+    "solution": "6 + 3"
+  },
+  {
+    "id": "Q74",
+    "difficulty": "easy",
+    "text": "A child receives 4 gifts and then 3 more. How many gifts total?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 3"
+  },
+  {
+    "id": "Q75",
+    "difficulty": "easy",
+    "text": "A pumpkin patch has 8 pumpkins; 1 rolls away. How many left?",
+    "answer": 7,
+    "operation": [
+      "s"
+    ],
+    "solution": "8 - 1"
+  },
+  {
+    "id": "Q81",
+    "difficulty": "easy",
+    "text": "A pantry has 4 bowls and someone puts 3 more inside. How many bowls total?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 3"
+  },
+  {
+    "id": "Q82",
+    "difficulty": "easy",
+    "text": "There are 6 forks on a table; 2 roll off. How many forks remain?",
+    "answer": 4,
+    "operation": [
+      "s"
+    ],
+    "solution": "6 - 2"
+  },
+  {
+    "id": "Q83",
+    "difficulty": "easy",
+    "text": "A pot holds 7 spoons but 1 is taken out. How many spoons inside now?",
+    "answer": 6,
+    "operation": [
+      "s"
+    ],
+    "solution": "7 - 1"
+  },
+  {
+    "id": "Q84",
+    "difficulty": "easy",
+    "text": "A drawer has 3 knives and 5 forks. How many utensils total?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 - 5"
+  },
+  {
+    "id": "Q85",
+    "difficulty": "easy",
+    "text": "A cookbook has 9 recipes. A new page adds 1 more. How many recipes now?",
+    "answer": 10,
+    "operation": [
+      "a"
+    ],
+    "solution": "9 + 1"
+  },
+  {
+    "id": "Q91",
+    "difficulty": "easy",
+    "text": "A kid has 3 notebooks, gets 2 more. How many notebooks now?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 2"
+  },
+  {
+    "id": "Q92",
+    "difficulty": "easy",
+    "text": "A classroom has 6 folders. A teacher puts in 3 more. How many folders?",
+    "answer": 9,
+    "operation": [
+      "a"
+    ],
+    "solution": "6 + 3"
+  },
+  {
+    "id": "Q93",
+    "difficulty": "easy",
+    "text": "A student has 4 erasers and finds 2 more. How many erasers now?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 2"
+  },
+  {
+    "id": "Q94",
+    "difficulty": "easy",
+    "text": "A kid brings 7 markers to school but loses 1. How many remain?",
+    "answer": 6,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "7 - 1"
+  },
+  {
+    "id": "Q95",
+    "difficulty": "easy",
+    "text": "A desk has 5 rulers. A student adds 3 more. How many rulers now?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 3"
+  },
+  {
+    "id": "S1",
+    "difficulty": "easy",
+    "text": "Liam went to the park with 2 apples in his pocket. His mom gave him 3 more. How many apples did Liam have now?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 + 3"
+  },
+  {
+    "id": "S2",
+    "difficulty": "easy",
+    "text": "Emma brought 4 crayons to class. Her friend shared 2 more with her. How many crayons does Emma have?",
+    "answer": 6,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "4 + 2"
+  },
+  {
+    "id": "S3",
+    "difficulty": "easy",
+    "text": "Noah baked 3 cookies in the morning and 2 more in the afternoon. How many cookies did he bake today?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 2"
+  },
+  {
+    "id": "S4",
+    "difficulty": "easy",
+    "text": "Ava picked 5 flowers on her walk. A butterfly landed on 1 and flew away with it. How many flowers does she still have?",
+    "answer": 4,
+    "operation": [
+      "s"
+    ],
+    "solution": "5 - 1"
+  },
+  {
+    "id": "S5",
+    "difficulty": "easy",
+    "text": "Mia stacked 2 books on her shelf and then found 4 more under her bed. How many books did she place on her shelf?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 + 4"
+  },
+  {
+    "id": "S6",
+    "difficulty": "easy",
+    "text": "Ethan packed 3 snacks for school. His dad added 1 more snack to his bag. How many snacks did Ethan bring?",
+    "answer": 4,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 1"
+  },
+  {
+    "id": "S7",
+    "difficulty": "easy",
+    "text": "Sophia drew 4 stars on her paper, then drew 3 more. How many stars did she draw?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 3"
+  },
+  {
+    "id": "S8",
+    "difficulty": "easy",
+    "text": "Oliver had 6 balloons, but 2 floated away. How many balloons does he still have?",
+    "answer": 4,
+    "operation": [
+      "s"
+    ],
+    "solution": "6 - 2"
+  },
+  {
+    "id": "S9",
+    "difficulty": "easy",
+    "text": "Isabella placed 3 stickers on her notebook and later added 2 more. How many stickers are on her notebook now?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 2"
+  },
+  {
+    "id": "S10",
+    "difficulty": "easy",
+    "text": "Lucas collected 7 colorful rocks at the beach. He gave 2 to his friend. How many rocks does Lucas have now?",
+    "answer": 5,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "7 - 2"
+  },
+  {
+    "id": "S11",
+    "difficulty": "easy",
+    "text": "Amelia packed 2 toy cars for her trip. Her brother handed her 2 more. How many cars did she bring?",
+    "answer": 4,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 + 2"
+  },
+  {
+    "id": "S12",
+    "difficulty": "easy",
+    "text": "Harper had 5 crayons in her box. She dropped 1 under her chair. How many crayons are still in the box?",
+    "answer": 4,
+    "operation": [
+      "s"
+    ],
+    "solution": "5 - 1"
+  },
+  {
+    "id": "S13",
+    "difficulty": "easy",
+    "text": "Henry poured 3 cups of juice and then poured 1 more. How many cups did he pour?",
+    "answer": 4,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 1"
+  },
+  {
+    "id": "S14",
+    "difficulty": "easy",
+    "text": "Evelyn found 6 seashells at the beach. A wave washed 2 away. How many seashells are left?",
+    "answer": 4,
+    "operation": [
+      "s"
+    ],
+    "solution": "6 - 2"
+  },
+  {
+    "id": "S15",
+    "difficulty": "easy",
+    "text": "Jackson had 4 toy dinosaurs. He found 3 more in his toy box. How many dinosaurs does he have now?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 3"
+  },
+  {
+    "id": "S16",
+    "difficulty": "easy",
+    "text": "Ella baked 2 muffins and her sister baked 5. How many muffins did they bake together?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 - 5"
+  },
+  {
+    "id": "S17",
+    "difficulty": "easy",
+    "text": "Aiden picked 6 blueberries, but he ate 1. How many blueberries remain?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "6 - 1"
+  },
+  {
+    "id": "S18",
+    "difficulty": "easy",
+    "text": "Scarlett carried 3 pencils to school and borrowed 2 from her friend. How many pencils does she have now?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "3 - 2"
+  },
+  {
+    "id": "S19",
+    "difficulty": "easy",
+    "text": "Grayson planted 4 seeds in the garden and later planted 2 more. How many seeds did he plant?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 2"
+  },
+  {
+    "id": "S20",
+    "difficulty": "easy",
+    "text": "Aria found 5 shiny marbles, but one rolled away. How many marbles does she still have?",
+    "answer": 4,
+    "operation": [
+      "s"
+    ],
+    "solution": "5"
+  },
+  {
+    "id": "S21",
+    "difficulty": "easy",
+    "text": "Leo built a block tower using 3 red blocks and 3 blue blocks. How many blocks did he use?",
+    "answer": 6,
+    "operation": [
+      "s"
+    ],
+    "solution": "3 - 3"
+  },
+  {
+    "id": "S22",
+    "difficulty": "easy",
+    "text": "Chloe put 4 cookies on her plate and added 3 more. How many cookies are on her plate?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 3"
+  },
+  {
+    "id": "S23",
+    "difficulty": "easy",
+    "text": "Mateo counted 7 ants marching on the sidewalk. Then 2 ran off. How many ants does he see now?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "7 - 2"
+  },
+  {
+    "id": "S24",
+    "difficulty": "easy",
+    "text": "Luna brought 2 markers to art class and found 4 more in her desk. How many markers does she have?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 + 4"
+  },
+  {
+    "id": "S25",
+    "difficulty": "easy",
+    "text": "Wyatt saw 5 birds in a tree. Two flew away. How many birds are still in the tree?",
+    "answer": 3,
+    "operation": [
+      "s"
+    ],
+    "solution": "5"
+  },
+  {
+    "id": "S26",
+    "difficulty": "easy",
+    "text": "Mila collected 3 feathers and her friend gave her 3 more. How many feathers does she have?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 3"
+  },
+  {
+    "id": "S27",
+    "difficulty": "easy",
+    "text": "James had 4 crayons in his hand, then picked up 4 more. How many crayons does he have total?",
+    "answer": 8,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "4 + 4"
+  },
+  {
+    "id": "S28",
+    "difficulty": "easy",
+    "text": "Aubrey ate 2 strawberries from a bowl that had 7. How many are left?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "2 - 7"
+  },
+  {
+    "id": "S29",
+    "difficulty": "easy",
+    "text": "Benjamin had 6 stickers and used 3 on his notebook. How many are left in his hand?",
+    "answer": 3,
+    "operation": [
+      "s"
+    ],
+    "solution": "6 - 3"
+  },
+  {
+    "id": "S30",
+    "difficulty": "easy",
+    "text": "Eleanor made 4 paper hearts and later made 2 more. How many hearts did she make?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 2"
+  },
+  {
+    "id": "S31",
+    "difficulty": "easy",
+    "text": "Logan found 3 toy robots in his closet and spotted 2 more under his bed. How many robots?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 2"
+  },
+  {
+    "id": "S32",
+    "difficulty": "easy",
+    "text": "Abigail drew 5 flowers and erased 1. How many flowers are still in her picture?",
+    "answer": 4,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "5 - 1"
+  },
+  {
+    "id": "S33",
+    "difficulty": "easy",
+    "text": "Jacob had 2 juice boxes and his friend gave him 2 more. How many juice boxes now?",
+    "answer": 4,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 + 2"
+  },
+  {
+    "id": "S34",
+    "difficulty": "easy",
+    "text": "Emily picked 6 colorful leaves in the fall. One blew away. How many leaves does she still have?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "6"
+  },
+  {
+    "id": "S35",
+    "difficulty": "easy",
+    "text": "Michael read 3 pages of his book and then 2 more pages. How many pages did he read?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 2"
+  },
+  {
+    "id": "S36",
+    "difficulty": "easy",
+    "text": "Sofia packed 4 crayons in her bag. Her teacher gave her 2 more. How many crayons does she have?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 2"
+  },
+  {
+    "id": "S37",
+    "difficulty": "easy",
+    "text": "Daniel saw 5 fish in the pond and then saw 3 more swim up. How many fish does he see?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 3"
+  },
+  {
+    "id": "S38",
+    "difficulty": "easy",
+    "text": "Avery had 7 gummy bears, but her brother ate 2. How many gummy bears left?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "7 - 2"
+  },
+  {
+    "id": "S39",
+    "difficulty": "easy",
+    "text": "Sebastian folded 3 paper airplanes and made 4 more. How many airplanes total?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 4"
+  },
+  {
+    "id": "S40",
+    "difficulty": "easy",
+    "text": "Nora picked 4 sunflowers in the garden and later picked 3 more. How many sunflowers total?",
+    "answer": 7,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "4 + 3"
+  },
+  {
+    "id": "S41",
+    "difficulty": "easy",
+    "text": "David carried 2 oranges from the kitchen. His sister handed him 1 more. How many oranges now?",
+    "answer": 3,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 + 1"
+  },
+  {
+    "id": "S42",
+    "difficulty": "easy",
+    "text": "Scarlett collected 5 shiny beads and found 2 more under her pillow. How many beads total?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 2"
+  },
+  {
+    "id": "S43",
+    "difficulty": "easy",
+    "text": "Joseph built a tower with 4 blocks and added 3 more. How many blocks tall is it?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 3"
+  },
+  {
+    "id": "S44",
+    "difficulty": "easy",
+    "text": "Victoria cut out 6 stars from paper. One fell on the floor. How many are still on her desk?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "6"
+  },
+  {
+    "id": "S45",
+    "difficulty": "easy",
+    "text": "Theo picked 3 cherries from the tree and then picked 4 more. How many cherries total?",
+    "answer": 7,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "3 + 4"
+  },
+  {
+    "id": "S46",
+    "difficulty": "easy",
+    "text": "Natalie found 2 puzzle pieces, then her brother found 5 more. How many puzzle pieces now?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 + 5"
+  },
+  {
+    "id": "S47",
+    "difficulty": "easy",
+    "text": "Dylan had 5 crayons but lost 2. How many crayons remain?",
+    "answer": 3,
+    "operation": [
+      "s"
+    ],
+    "solution": "5 - 2"
+  },
+  {
+    "id": "S48",
+    "difficulty": "easy",
+    "text": "Hazel placed 4 cookies on a tray and then added 4 more. How many cookies now?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 4"
+  },
+  {
+    "id": "S49",
+    "difficulty": "easy",
+    "text": "Eli saw 7 bees buzzing around a flower. Two flew away. How many bees does he still see?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "7"
+  },
+  {
+    "id": "S50",
+    "difficulty": "easy",
+    "text": "Aurora drew 6 hearts on the page. She erased 2. How many hearts remain?",
+    "answer": 4,
+    "operation": [
+      "s"
+    ],
+    "solution": "6 - 2"
+  },
+  {
+    "id": "S51",
+    "difficulty": "easy",
+    "text": "Hudson found 2 shiny rocks and then 3 more near the stream. How many rocks total?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 + 3"
+  },
+  {
+    "id": "S52",
+    "difficulty": "easy",
+    "text": "Violet packed 5 crayons and lost 1 on the way. How many crayons does she still have?",
+    "answer": 4,
+    "operation": [
+      "s"
+    ],
+    "solution": "5 - 1"
+  },
+  {
+    "id": "S53",
+    "difficulty": "easy",
+    "text": "Hunter had 3 cupcakes, then baked 4 more. How many cupcakes total?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 4"
+  },
+  {
+    "id": "S54",
+    "difficulty": "easy",
+    "text": "Penelope picked 6 apples from a tree. One dropped. How many apples remain?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "6"
+  },
+  {
+    "id": "S55",
+    "difficulty": "easy",
+    "text": "Levi found 4 shells in the sand and then found 4 more by the water. How many shells now?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 4"
+  },
+  {
+    "id": "S56",
+    "difficulty": "easy",
+    "text": "Claire carried 5 stickers to school and her friend gave her 2 more. How many stickers total?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 2"
+  },
+  {
+    "id": "S57",
+    "difficulty": "easy",
+    "text": "Owen had 7 crayons and lost 1 at recess. How many crayons remain?",
+    "answer": 6,
+    "operation": [
+      "s"
+    ],
+    "solution": "7 - 1"
+  },
+  {
+    "id": "S58",
+    "difficulty": "easy",
+    "text": "Stella caught 3 fireflies, then caught 2 more. How many fireflies does she have?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 2"
+  },
+  {
+    "id": "S59",
+    "difficulty": "easy",
+    "text": "Luke placed 2 cups on the table, then added 4 more. How many cups are on the table?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 + 4"
+  },
+  {
+    "id": "S60",
+    "difficulty": "easy",
+    "text": "Zoe made 4 bracelets and then made 2 more. How many bracelets total?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 2"
+  },
+  {
+    "id": "S61",
+    "difficulty": "easy",
+    "text": "Isaac planted 3 seeds in a pot and added 3 more. How many seeds total?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 3"
+  },
+  {
+    "id": "S62",
+    "difficulty": "easy",
+    "text": "Hannah picked 2 daisies and her mom handed her 4 more. How many daisies does she have?",
+    "answer": 6,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "2 + 4"
+  },
+  {
+    "id": "S63",
+    "difficulty": "easy",
+    "text": "Anthony had 6 toy cars and gave 1 to his friend. How many cars remain?",
+    "answer": 5,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "6 - 1"
+  },
+  {
+    "id": "S64",
+    "difficulty": "easy",
+    "text": "Lillian saw 5 ladybugs on a leaf and then spotted 2 more. How many ladybugs total?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 2"
+  },
+  {
+    "id": "S65",
+    "difficulty": "easy",
+    "text": "Jack read 2 chapters this morning and 3 more tonight. How many chapters did he read?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 + 3"
+  },
+  {
+    "id": "S66",
+    "difficulty": "easy",
+    "text": "Addison colored 3 stars and later colored 4 more. How many stars did she color?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 4"
+  },
+  {
+    "id": "S67",
+    "difficulty": "easy",
+    "text": "Wyatt stacked 2 toy blocks and added 5 more. How many blocks in his stack?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 + 5"
+  },
+  {
+    "id": "S68",
+    "difficulty": "easy",
+    "text": "Samantha held 4 balloons and then got 2 more from her dad. How many balloons now?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 2"
+  },
+  {
+    "id": "S69",
+    "difficulty": "easy",
+    "text": "Gabriel picked 6 carrots from the garden. His rabbit ate 1. How many remain?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "6 - 1"
+  },
+  {
+    "id": "S70",
+    "difficulty": "easy",
+    "text": "Ariana found 3 cute buttons in her craft box and later found 3 more. How many buttons now?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 3"
+  },
+  {
+    "id": "S71",
+    "difficulty": "easy",
+    "text": "Nicholas saw 4 clouds shaped like animals and 3 more drifted by. How many clouds total?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 3"
+  },
+  {
+    "id": "S72",
+    "difficulty": "easy",
+    "text": "Maya put 5 cherries in her bowl and added 2 more. How many cherries now?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 2"
+  },
+  {
+    "id": "S73",
+    "difficulty": "easy",
+    "text": "Josiah counted 6 ants on a stick. Two crawled away. How many ants does he see now?",
+    "answer": 4,
+    "operation": [
+      "s"
+    ],
+    "solution": "6"
+  },
+  {
+    "id": "S74",
+    "difficulty": "easy",
+    "text": "Hailey poured 3 cups of lemonade and then poured 3 more. How many cups total?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 3"
+  },
+  {
+    "id": "S75",
+    "difficulty": "easy",
+    "text": "Caleb found 4 stickers on his desk and then found 4 more in his backpack. How many stickers total?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 4"
+  },
+  {
+    "id": "S76",
+    "difficulty": "easy",
+    "text": "Paisley brought 3 cookies to school and her friend gave her 3 more. How many cookies?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 3"
+  },
+  {
+    "id": "S77",
+    "difficulty": "easy",
+    "text": "Eliana planted 5 small plants and added 2 more. How many plants now?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 2"
+  },
+  {
+    "id": "S78",
+    "difficulty": "easy",
+    "text": "Ezra made 6 drawings but gave 1 to his teacher. How many drawings remain?",
+    "answer": 5,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "6 - 1"
+  },
+  {
+    "id": "S79",
+    "difficulty": "easy",
+    "text": "Naomi has 3 pencils and finds 4 more in her drawer. How many pencils now?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 4"
+  },
+  {
+    "id": "S80",
+    "difficulty": "easy",
+    "text": "Thomas folded 4 paper planes and made 1 more. How many did he make in total?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 1"
+  },
+  {
+    "id": "S81",
+    "difficulty": "easy",
+    "text": "Ruby found 2 dogs in the park and then saw 3 more running by. How many dogs did she see?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 + 3"
+  },
+  {
+    "id": "S82",
+    "difficulty": "easy",
+    "text": "Asher counted 7 fireflies in the backyard. Two flew away. How many remain?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "7"
+  },
+  {
+    "id": "S83",
+    "difficulty": "easy",
+    "text": "Bella had 6 crayons and dropped 1. How many crayons remain?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "6 - 1"
+  },
+  {
+    "id": "S84",
+    "difficulty": "easy",
+    "text": "Xavier washed 4 dishes and then washed 3 more. How many dishes did he wash?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 3"
+  },
+  {
+    "id": "S85",
+    "difficulty": "easy",
+    "text": "Leah drew 5 stars and erased 1. How many stars remain?",
+    "answer": 4,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "5 - 1"
+  },
+  {
+    "id": "S86",
+    "difficulty": "easy",
+    "text": "Evan picked 2 oranges and later picked 4 more. How many oranges now?",
+    "answer": 6,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "2 + 4"
+  },
+  {
+    "id": "S87",
+    "difficulty": "easy",
+    "text": "Elise found 6 beads and gave 2 to her sister. How many beads remain?",
+    "answer": 4,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "6 - 2"
+  },
+  {
+    "id": "S88",
+    "difficulty": "easy",
+    "text": "Connor lined up 3 toy trains and added 2 more. How many toy trains total?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 2"
+  },
+  {
+    "id": "S89",
+    "difficulty": "easy",
+    "text": "Sadie had 7 crayons and used 2 for her picture. How many crayons does she have left?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "7 - 2"
+  },
+  {
+    "id": "S90",
+    "difficulty": "easy",
+    "text": "Isaiah scooped 4 snowballs and then scooped 1 more. How many snowballs total?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 1"
+  },
+  {
+    "id": "S91",
+    "difficulty": "easy",
+    "text": "Caroline picked 3 apples and her brother picked 4 apples. How many apples total?",
+    "answer": 7,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "3 - 4"
+  },
+  {
+    "id": "S92",
+    "difficulty": "easy",
+    "text": "Adam found 5 toy blocks under the couch and 2 behind the shelf. How many blocks?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 - 2"
+  },
+  {
+    "id": "S93",
+    "difficulty": "easy",
+    "text": "Aaliyah ate 2 pieces of candy from her bag of 6. How many pieces remain?",
+    "answer": 4,
+    "operation": [
+      "s"
+    ],
+    "solution": "2 - 6"
+  },
+  {
+    "id": "S94",
+    "difficulty": "easy",
+    "text": "Christian found 3 markers on his desk and later found 3 more in his backpack. How many markers total?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 3"
+  },
+  {
+    "id": "S95",
+    "difficulty": "easy",
+    "text": "Autumn collected 5 pinecones and her friend gave her 1 more. How many pinecones total?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 1"
+  },
+  {
+    "id": "S96",
+    "difficulty": "easy",
+    "text": "Ezekiel counted 4 frogs at the pond and then spotted 2 more. How many frogs total?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 2"
+  },
+  {
+    "id": "S97",
+    "difficulty": "easy",
+    "text": "Alice had 7 beads and used 2 to make a bracelet. How many beads left?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "7 - 2"
+  },
+  {
+    "id": "S98",
+    "difficulty": "easy",
+    "text": "Ian read 3 chapters before bed and 3 more in the morning. How many chapters did he read?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 3"
+  },
+  {
+    "id": "S99",
+    "difficulty": "easy",
+    "text": "Ariella picked 4 strawberries and her sister picked 4 more. How many strawberries total?",
+    "answer": 8,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "4 + 4"
+  },
+  {
+    "id": "S100",
+    "difficulty": "easy",
+    "text": "Roman found 2 toy cars under his bed and then found 5 more. How many toy cars now?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "2 + 5"
+  },
+  {
+    "id": "MS1",
+    "difficulty": "easy",
+    "text": "Liam had 2 apples. He bought 3 more and then gave 1 to his friend. How many apples does he have now?",
+    "answer": 4,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "2 + 3 - 1"
+  },
+  {
+    "id": "MS2",
+    "difficulty": "easy",
+    "text": "Emma found 4 shells on the beach. She found 2 more, but 1 blew away. How many shells does she keep?",
+    "answer": 5,
+    "operation": [
+      "a"
+    ],
+    "solution": "4 + 2 - 1"
+  },
+  {
+    "id": "MS3",
+    "difficulty": "easy",
+    "text": "Noah read 3 pages in the morning and 2 more at night, then reread 1 page. How many pages did he read altogether?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "3 + 2 - 1"
+  },
+  {
+    "id": "MS4",
+    "difficulty": "easy",
+    "text": "Ava planted 5 seeds, then planted 2 more. One didn\u2019t grow. How many grew?",
+    "answer": 6,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 2"
+  },
+  {
+    "id": "MS5",
+    "difficulty": "easy",
+    "text": "Mia drew 3 stars, added 3 more, then erased 2. How many stars remain?",
+    "answer": 4,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "3 + 3 + 2"
+  },
+  {
+    "id": "MS6",
+    "difficulty": "easy",
+    "text": "Ethan packed 2 snacks, then added 2 more, but ate 1. How many snacks are left?",
+    "answer": 3,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "2 + 2 + 1"
+  },
+  {
+    "id": "MS7",
+    "difficulty": "easy",
+    "text": "Sophia had 6 balloons. She gave 2 away and then got 1 more. How many balloons now?",
+    "answer": 5,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "6 + 2 + 1"
+  },
+  {
+    "id": "MS8",
+    "difficulty": "easy",
+    "text": "Oliver built a tower with 4 blocks and added 3 more. Then 2 fell off. How many remain?",
+    "answer": 5,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "4 + 3 + 2"
+  },
+  {
+    "id": "MS9",
+    "difficulty": "easy",
+    "text": "Isabella collected 5 stickers, got 2 more, and used 1 on her notebook. How many stickers does she have?",
+    "answer": 6,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "5 + 2 + 1"
+  },
+  {
+    "id": "MS10",
+    "difficulty": "easy",
+    "text": "Lucas had 7 marbles, lost 2, then found 3 more. How many marbles now?",
+    "answer": 8,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "7 + 2 - 3"
+  },
+  {
+    "id": "MS11",
+    "difficulty": "easy",
+    "text": "Amelia put 2 cookies on her plate. Her mom added 4 more, and she ate 1. How many are left?",
+    "answer": 5,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "2 + 4 + 1"
+  },
+  {
+    "id": "MS12",
+    "difficulty": "easy",
+    "text": "Harper filled her jar with 3 pom\u2011poms, then added 3 more. She gave 2 to her friend. How many remain?",
+    "answer": 4,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "3 + 3 + 2"
+  },
+  {
+    "id": "MS13",
+    "difficulty": "easy",
+    "text": "Henry drew 4 circles and 2 squares, then erased 1 circle. How many shapes remain?",
+    "answer": 5,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "4 - 2 - 1"
+  },
+  {
+    "id": "MS14",
+    "difficulty": "easy",
+    "text": "Evelyn picked 6 blueberries, ate 2, then picked 3 more. How many blueberries now?",
+    "answer": 7,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "6 + 2 - 3"
+  },
+  {
+    "id": "MS15",
+    "difficulty": "easy",
+    "text": "Jackson had 5 toy cars, got 2 new ones, then lost 1. How many cars does he have?",
+    "answer": 6,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "5 + 2 - 1"
+  },
+  {
+    "id": "MS16",
+    "difficulty": "easy",
+    "text": "Ella had 3 markers, found 3 more, then gave 1 away. How many markers remain?",
+    "answer": 5,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "3 + 3 - 1"
+  },
+  {
+    "id": "MS17",
+    "difficulty": "easy",
+    "text": "Aiden made 4 paper airplanes and 2 more later. One ripped. How many good airplanes remain?",
+    "answer": 5,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "4 + 2"
+  },
+  {
+    "id": "MS18",
+    "difficulty": "easy",
+    "text": "Scarlett counted 6 bees, 2 flew away, then 3 more arrived. How many bees does she see?",
+    "answer": 7,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "6 + 2 - 3"
+  },
+  {
+    "id": "MS19",
+    "difficulty": "easy",
+    "text": "Grayson collected 3 stones, found 4 more, then dropped 1. How many stones does he have?",
+    "answer": 6,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "3 + 4 - 1"
+  },
+  {
+    "id": "MS20",
+    "difficulty": "easy",
+    "text": "Aria picked 5 flowers and then 2 more. One wilted. How many good flowers remain?",
+    "answer": 6,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "5 + 2"
+  },
+  {
+    "id": "MS21",
+    "difficulty": "easy",
+    "text": "Leo wrote 2 sentences, wrote 3 more, then erased 1. How many sentences did he keep?",
+    "answer": 4,
+    "operation": [
+      "s"
+    ],
+    "solution": "2 + 3 - 1"
+  },
+  {
+    "id": "MS22",
+    "difficulty": "easy",
+    "text": "Chloe bought 4 crayons and got 2 as a gift. Then she lost 1. How many crayons remain?",
+    "answer": 5,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "4 + 2 - 1"
+  },
+  {
+    "id": "MS23",
+    "difficulty": "easy",
+    "text": "Mateo saw 5 ladybugs, then saw 2 more, and 1 flew away. How many ladybugs now?",
+    "answer": 6,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "5 + 2 - 1"
+  },
+  {
+    "id": "MS24",
+    "difficulty": "easy",
+    "text": "Luna carried 3 pencils and put 2 more in her bag. She gave 1 to her friend. How many remain?",
+    "answer": 4,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "3 + 2 - 1"
+  },
+  {
+    "id": "MS25",
+    "difficulty": "easy",
+    "text": "Wyatt had 6 toy ships, lost 3, found 2 more. How many ships now?",
+    "answer": 5,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "6 + 3 - 2"
+  },
+  {
+    "id": "MS26",
+    "difficulty": "easy",
+    "text": "Mila made 4 bracelets, made 2 more, then gave 1 away. How many bracelets does she have?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "4 + 2 - 1"
+  },
+  {
+    "id": "MS27",
+    "difficulty": "easy",
+    "text": "James bought 3 muffins, ate 1, then bought 2 more. How many muffins does he have?",
+    "answer": 4,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "3 + 1 - 2"
+  },
+  {
+    "id": "MS28",
+    "difficulty": "easy",
+    "text": "Aubrey picked 7 leaves, dropped 2, and picked 1 more. How many leaves now?",
+    "answer": 6,
+    "operation": [
+      "s"
+    ],
+    "solution": "7 + 2 - 1"
+  },
+  {
+    "id": "MS29",
+    "difficulty": "easy",
+    "text": "Benjamin had 4 trucks, bought 4 more, then gave 1 to his brother. How many trucks left?",
+    "answer": 7,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "4 + 4 - 1"
+  },
+  {
+    "id": "MS30",
+    "difficulty": "easy",
+    "text": "Eleanor found 5 shells and 3 more later. One cracked. How many shells remain?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 3"
+  },
+  {
+    "id": "MS71",
+    "difficulty": "easy",
+    "text": "Nicholas had 3 books, got 4 more, then returned 1. How many books now?",
+    "answer": 6,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "3 + 4 + 1"
+  },
+  {
+    "id": "MS72",
+    "difficulty": "easy",
+    "text": "Maya carried 2 notebooks, picked up 3 more, then gave 1 away. How many notebooks now?",
+    "answer": 4,
+    "operation": [
+      "s"
+    ],
+    "solution": "2 + 3 - 1"
+  },
+  {
+    "id": "MS73",
+    "difficulty": "easy",
+    "text": "Josiah saw 4 frogs and then 3 more hopped over, but 1 hopped away. How many frogs now?",
+    "answer": 6,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "4 + 3 - 1"
+  },
+  {
+    "id": "MS74",
+    "difficulty": "easy",
+    "text": "Hailey collected 6 pinecones, dropped 2, then found 1 more. How many pinecones now?",
+    "answer": 5,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "6 + 2 - 1"
+  },
+  {
+    "id": "MS75",
+    "difficulty": "easy",
+    "text": "Caleb made 3 paper boats, made 2 more, and 1 ripped. How many boats remain?",
+    "answer": 4,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "3 + 2 - 1"
+  }
+]

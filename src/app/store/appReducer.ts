@@ -3,6 +3,9 @@ import { DEFAULT_APP_STATE } from './types';
 
 export function appReducer(state: AppState, action: AppAction): AppState {
   switch (action.type) {
+    case 'SET_APP_MODE':
+      return { ...state, mode: action.payload };
+
     case 'SET_CONFIG':
       return {
         ...state,
@@ -83,6 +86,63 @@ export function appReducer(state: AppState, action: AppAction): AppState {
         session: null,
         config: { ...state.config, mode: 'FreePractice' },
       };
+
+    case 'START_WORD_PROBLEM_SESSION':
+      return { ...state, wordProblemSession: action.payload };
+
+    case 'NAVIGATE_WORD_PROBLEM': {
+      if (!state.wordProblemSession) return state;
+      return {
+        ...state,
+        wordProblemSession: {
+          ...state.wordProblemSession,
+          currentIndex: action.payload.index,
+        },
+      };
+    }
+
+    case 'SET_WORD_PROBLEM_ANSWER': {
+      if (!state.wordProblemSession) return state;
+      return {
+        ...state,
+        wordProblemSession: {
+          ...state.wordProblemSession,
+          answers: {
+            ...state.wordProblemSession.answers,
+            [action.payload.problemId]: action.payload.answer,
+          },
+        },
+      };
+    }
+
+    case 'CHECK_WORD_PROBLEM': {
+      if (!state.wordProblemSession) return state;
+      return {
+        ...state,
+        wordProblemSession: {
+          ...state.wordProblemSession,
+          checkResults: {
+            ...state.wordProblemSession.checkResults,
+            [action.payload.problemId]: action.payload.result,
+          },
+        },
+      };
+    }
+
+    case 'COMPLETE_WORD_PROBLEM_SESSION': {
+      if (!state.wordProblemSession) return state;
+      return {
+        ...state,
+        wordProblemSession: {
+          ...state.wordProblemSession,
+          status: 'completed',
+          completedAt: Date.now(),
+        },
+      };
+    }
+
+    case 'END_WORD_PROBLEM_SESSION':
+      return { ...state, wordProblemSession: null };
 
     case 'CHECK_PROBLEM':
       if (!state.session) return state;

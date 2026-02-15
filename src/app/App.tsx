@@ -11,6 +11,7 @@ import { Shell } from '../ui/layout/Shell';
 import { TopBar } from '../ui/layout/TopBar';
 import { StickyToolbar } from '../ui/layout/StickyToolbar';
 import { ProblemGrid } from '../ui/problems/ProblemGrid';
+import { WordProblemsPage } from '../ui/wordproblems/WordProblemsPage';
 import { ConfirmDialog } from '../ui/shared/ConfirmDialog';
 import { SessionResultOverlay } from '../ui/shared/SessionResultOverlay';
 
@@ -29,7 +30,7 @@ export function App() {
   const sessionRef = useRef(state.session);
   sessionRef.current = state.session;
 
-  const { config, session, toolSettings } = state;
+  const { mode, config, session, wordProblemSession, toolSettings } = state;
 
   // ── Clear-all-ink version counter ────────────────────────────────
   // Incremented when we want every ProblemCanvas to wipe its ink layer.
@@ -164,35 +165,44 @@ export function App() {
     <ThemeProvider themeId={config.themeId}>
       <Shell>
         <TopBar
+          mode={mode}
           config={config}
           session={session}
           dispatch={dispatch}
           onStartSession={handleStartSession}
         />
 
-        <StickyToolbar
-          toolColor={toolSettings.color}
-          toolSize={toolSettings.size}
-          toolMode={toolSettings.mode}
-          dispatch={dispatch}
-          onClearAll={handleClearAll}
-          session={session}
-          onFinishProblems={handleFinishProblems}
-          onEndSession={handleEndSession}
-        />
+        {mode === 'canvas' ? (
+          <>
+            <StickyToolbar
+              toolColor={toolSettings.color}
+              toolSize={toolSettings.size}
+              toolMode={toolSettings.mode}
+              dispatch={dispatch}
+              onClearAll={handleClearAll}
+              session={session}
+              onFinishProblems={handleFinishProblems}
+              onEndSession={handleEndSession}
+            />
 
-        <main className="flex-1">
-          <ProblemGrid
-            config={config}
-            sessionProblems={sessionProblems}
-            sessionStatus={session?.status ?? null}
-            toolColor={toolSettings.color}
-            toolSize={toolSettings.size}
-            toolMode={toolSettings.mode}
-            onCheck={handleCheck}
-            clearInkVersion={clearInkVersion}
-          />
-        </main>
+            <main className="flex-1">
+              <ProblemGrid
+                config={config}
+                sessionProblems={sessionProblems}
+                sessionStatus={session?.status ?? null}
+                toolColor={toolSettings.color}
+                toolSize={toolSettings.size}
+                toolMode={toolSettings.mode}
+                onCheck={handleCheck}
+                clearInkVersion={clearInkVersion}
+              />
+            </main>
+          </>
+        ) : (
+          <main className="flex-1">
+            <WordProblemsPage session={wordProblemSession} dispatch={dispatch} />
+          </main>
+        )}
 
         <ConfirmDialog
           open={showEndNoChecksConfirm}

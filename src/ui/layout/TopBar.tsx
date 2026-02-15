@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import type {
   AppAction,
+  AppMode,
   ActiveSession,
   Difficulty,
   MaxDigits,
@@ -11,6 +12,7 @@ import { useTheme } from '../../theme/themeProvider';
 import { THEMES } from '../../theme/themes';
 
 interface TopBarProps {
+  mode: AppMode;
   config: PracticeConfig;
   session: ActiveSession | null;
   dispatch: React.Dispatch<AppAction>;
@@ -20,6 +22,7 @@ interface TopBarProps {
 const DIFFICULTIES: Difficulty[] = ['Easy', 'Medium', 'Hard'];
 
 export function TopBar({
+  mode,
   config,
   session,
   dispatch,
@@ -28,8 +31,11 @@ export function TopBar({
   const theme = useTheme();
   const [controlsOpen, setControlsOpen] = useState(false);
   const [sessionMenuOpen, setSessionMenuOpen] = useState(false);
+  const [themeMenuOpen, setThemeMenuOpen] = useState(false);
   const sessionBtnRef = useRef<HTMLButtonElement>(null);
   const sessionMenuRef = useRef<HTMLDivElement>(null);
+  const themeBtnRef = useRef<HTMLButtonElement>(null);
+  const themeMenuRef = useRef<HTMLDivElement>(null);
 
   // Close session popover on outside click and revert to practice mode
   useEffect(() => {
@@ -52,6 +58,23 @@ export function TopBar({
     return () => document.removeEventListener('mousedown', handleClick);
   }, [sessionMenuOpen, session, dispatch]);
 
+  // Close theme menu on outside click
+  useEffect(() => {
+    if (!themeMenuOpen) return;
+    function handleClick(e: MouseEvent) {
+      if (
+        themeMenuRef.current &&
+        !themeMenuRef.current.contains(e.target as Node) &&
+        themeBtnRef.current &&
+        !themeBtnRef.current.contains(e.target as Node)
+      ) {
+        setThemeMenuOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, [themeMenuOpen]);
+
   // Close session popover when a session starts
   useEffect(() => {
     if (session) setSessionMenuOpen(false);
@@ -70,6 +93,20 @@ export function TopBar({
       left: rect.right,     // align right edge
     });
   }, [sessionMenuOpen]);
+
+  // Compute theme menu position relative to the theme button
+  const [themeMenuPos, setThemeMenuPos] = useState<{ top: number; left: number } | null>(null);
+  useEffect(() => {
+    if (!themeMenuOpen || !themeBtnRef.current) {
+      setThemeMenuPos(null);
+      return;
+    }
+    const rect = themeBtnRef.current.getBoundingClientRect();
+    setThemeMenuPos({
+      top: rect.bottom + 8, // 8px gap below button
+      left: rect.right,     // align right edge
+    });
+  }, [themeMenuOpen]);
 
   // Check if session exists (both 'active' and 'completed' states should disable controls)
   const isSessionActive = session !== null;
@@ -96,50 +133,100 @@ export function TopBar({
         borderColor: theme.colors.cardBorder,
       }}
     >
-      {/* ====== ROW 1: Main top bar — title + hamburger ====== */}
+      {/* ====== ROW 1: Main top bar — tabs + theme selector + hamburger ====== */}
       <div className="flex items-center justify-between px-3 py-2 sm:px-4">
-        <h1
-          className="text-lg font-bold whitespace-nowrap"
-          style={{ color: theme.colors.accent }}
-        >
-          🧮 MathCanvas
-        </h1>
+        {/* Tab navigation */}
+        <div className="flex gap-1">
+          <button
+            onClick={() => dispatch({ type: 'SET_APP_MODE', payload: 'canvas' })}
+            className={`px-4 py-2 font-bold rounded-lg transition-colors ${
+              mode === 'canvas' ? 'text-white' : 'text-gray-500 hover:bg-gray-100'
+            }`}
+            style={{
+              backgroundColor: mode === 'canvas' ? theme.colors.accent : undefined,
+            }}
+          >
+            Number Problems
+          </button>
+          <button
+            onClick={() => dispatch({ type: 'SET_APP_MODE', payload: 'wordproblems' })}
+            className={`px-4 py-2 font-bold rounded-lg transition-colors ${
+              mode === 'wordproblems' ? 'text-white' : 'text-gray-500 hover:bg-gray-100'
+            }`}
+            style={{
+              backgroundColor: mode === 'wordproblems' ? theme.colors.accent : undefined,
+            }}
+          >
+            Word Problems
+          </button>
+        </div>
 
-        {/* Hamburger toggle — visible on mobile/tablet, hidden on desktop */}
-        <button
-          onClick={() => setControlsOpen((o) => !o)}
-          className="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg transition-colors"
-          style={{
-            color: theme.colors.accent,
-            backgroundColor: controlsOpen ? theme.colors.accent + '18' : 'transparent',
-          }}
-          aria-label={controlsOpen ? 'Close settings' : 'Open settings'}
-          aria-expanded={controlsOpen}
-        >
-          {controlsOpen ? (
-            /* X icon */
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-              <line x1="6" y1="6" x2="18" y2="18" />
-              <line x1="18" y1="6" x2="6" y2="18" />
+        {/* Right side: Theme selector + Hamburger */}
+        <div className="flex items-center gap-2">
+          {/* Theme selector button */}
+          <button
+            ref={themeBtnRef}
+            onClick={() => setThemeMenuOpen(!themeMenuOpen)}
+            className="flex items-center gap-2 px-3 py-2 rounded-lg transition-colors hover:bg-gray-100"
+            style={{
+              backgroundColor: themeMenuOpen ? theme.colors.accent + '18' : 'transparent',
+            }}
+          >
+            <span className="text-xl">{THEMES.find(t => t.id === config.themeId)?.emoji}</span>
+            <span className="hidden sm:inline text-sm font-medium text-gray-700">Theme</span>
+            <svg 
+              width="16" 
+              height="16" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2" 
+              strokeLinecap="round"
+              className={`transition-transform ${themeMenuOpen ? 'rotate-180' : ''}`}
+            >
+              <polyline points="6 9 12 15 18 9" />
             </svg>
-          ) : (
-            /* Hamburger icon */
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-              <line x1="4" y1="6" x2="20" y2="6" />
-              <line x1="4" y1="12" x2="20" y2="12" />
-              <line x1="4" y1="18" x2="20" y2="18" />
-            </svg>
+          </button>
+
+          {/* Hamburger toggle — visible on mobile/tablet, hidden on desktop (canvas mode only) */}
+          {mode === 'canvas' && (
+            <button
+              onClick={() => setControlsOpen((o) => !o)}
+              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg transition-colors"
+              style={{
+                color: theme.colors.accent,
+                backgroundColor: controlsOpen ? theme.colors.accent + '18' : 'transparent',
+              }}
+              aria-label={controlsOpen ? 'Close settings' : 'Open settings'}
+              aria-expanded={controlsOpen}
+            >
+              {controlsOpen ? (
+                /* X icon */
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                </svg>
+              ) : (
+                /* Hamburger icon */
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                  <line x1="4" y1="6" x2="20" y2="6" />
+                  <line x1="4" y1="12" x2="20" y2="12" />
+                  <line x1="4" y1="18" x2="20" y2="18" />
+                </svg>
+              )}
+            </button>
           )}
-        </button>
+        </div>
       </div>
 
-      {/* ====== ROW 2: Controls bar — collapsible on mobile/tablet ====== */}
-      <div
-        className={`border-t overflow-hidden transition-all duration-200 ease-in-out ${
-          controlsOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
-        } lg:max-h-none lg:opacity-100`}
-        style={{ borderColor: theme.colors.cardBorder }}
-      >
+      {/* ====== ROW 2: Controls bar — only show for canvas mode ====== */}
+      {mode === 'canvas' && (
+        <div
+          className={`border-t overflow-hidden transition-all duration-200 ease-in-out ${
+            controlsOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+          } lg:max-h-none lg:opacity-100`}
+          style={{ borderColor: theme.colors.cardBorder }}
+        >
         <div className="flex flex-wrap items-center gap-2 px-3 py-2 sm:px-4 sm:gap-3">
           {/* Operations */}
           <div className="flex gap-1">
@@ -252,33 +339,14 @@ export function TopBar({
             />
             Guides
           </label>
-
-          {/* Theme selector */}
-          <div className="flex gap-1">
-            {THEMES.map((t) => (
-              <button
-                key={t.id}
-                onClick={() => dispatch({ type: 'SET_THEME', payload: t.id })}
-                className={`text-base w-9 h-9 rounded-full border-2 transition-transform ${
-                  config.themeId === t.id ? 'scale-110 border-current' : 'border-transparent'
-                }`}
-                style={{
-                  borderColor: config.themeId === t.id ? theme.colors.accent : 'transparent',
-                }}
-                title={t.name}
-              >
-                {t.emoji}
-              </button>
-            ))}
-          </div>
         </div>
-      </div>
-
+        </div>
+      )}
     </div>
   );
 
   /* ---------- Session popover (portal) ---------- */
-  const popover =
+  const sessionPopover =
     config.mode === 'Session' && sessionMenuOpen && !session && menuPos
       ? createPortal(
           <div
@@ -331,10 +399,50 @@ export function TopBar({
         )
       : null;
 
+  /* ---------- Theme menu (portal) ---------- */
+  const themePopover = themeMenuOpen && themeMenuPos
+    ? createPortal(
+        <div
+          ref={themeMenuRef}
+          className="fixed z-[9999] flex flex-col gap-2 p-3 rounded-xl shadow-lg border"
+          style={{
+            top: themeMenuPos.top,
+            left: themeMenuPos.left,
+            transform: 'translateX(-100%)', // right-align to the anchor
+            backgroundColor: theme.colors.bgTopBar,
+            borderColor: theme.colors.cardBorder,
+            width: 200,
+          }}
+        >
+          <div className="text-xs font-medium text-gray-500 mb-1">Select Theme</div>
+          {THEMES.map((t) => (
+            <button
+              key={t.id}
+              onClick={() => {
+                dispatch({ type: 'SET_THEME', payload: t.id });
+                setThemeMenuOpen(false);
+              }}
+              className={`flex items-center gap-3 px-3 py-2 rounded-lg transition-colors ${
+                config.themeId === t.id ? 'text-white font-bold' : 'text-gray-700 hover:bg-gray-100'
+              }`}
+              style={{
+                backgroundColor: config.themeId === t.id ? theme.colors.accent : undefined,
+              }}
+            >
+              <span className="text-xl">{t.emoji}</span>
+              <span className="text-sm">{t.name}</span>
+            </button>
+          ))}
+        </div>,
+        document.body,
+      )
+    : null;
+
   return (
     <>
       {bar}
-      {popover}
+      {sessionPopover}
+      {themePopover}
     </>
   );
 }

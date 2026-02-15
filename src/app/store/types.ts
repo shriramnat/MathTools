@@ -1,4 +1,5 @@
 import { z } from 'zod/v4';
+import type { WordProblemSession } from '../../domain/wordproblems/types';
 
 // ── Operation Types ──────────────────────────────────────────────────
 export type Operation = 'addition' | 'subtraction' | 'multiplication';
@@ -124,9 +125,13 @@ export interface ActiveSession {
   checkResults: Record<string, CheckResult>;
 }
 
+export type AppMode = 'canvas' | 'wordproblems';
+
 export interface AppState {
+  mode: AppMode;
   config: PracticeConfig;
   session: ActiveSession | null;
+  wordProblemSession: WordProblemSession | null;
   progress: ProgressStats;
   toolSettings: {
     color: string;
@@ -137,6 +142,7 @@ export interface AppState {
 
 // ── App Actions ──────────────────────────────────────────────────────
 export type AppAction =
+  | { type: 'SET_APP_MODE'; payload: AppMode }
   | { type: 'SET_CONFIG'; payload: Partial<PracticeConfig> }
   | { type: 'SET_OPERATIONS'; payload: Partial<PracticeConfig['operations']> }
   | { type: 'SET_MAX_DIGITS'; payload: MaxDigits }
@@ -150,6 +156,12 @@ export type AppAction =
   | { type: 'COMPLETE_SESSION' }
   | { type: 'END_SESSION' }
   | { type: 'CHECK_PROBLEM'; payload: { problemId: string; result: CheckResult } }
+  | { type: 'START_WORD_PROBLEM_SESSION'; payload: WordProblemSession }
+  | { type: 'NAVIGATE_WORD_PROBLEM'; payload: { index: number } }
+  | { type: 'SET_WORD_PROBLEM_ANSWER'; payload: { problemId: string; answer: number | null } }
+  | { type: 'CHECK_WORD_PROBLEM'; payload: { problemId: string; result: CheckResult } }
+  | { type: 'COMPLETE_WORD_PROBLEM_SESSION' }
+  | { type: 'END_WORD_PROBLEM_SESSION' }
   | { type: 'SET_TOOL_COLOR'; payload: string }
   | { type: 'SET_TOOL_SIZE'; payload: number }
   | { type: 'SET_TOOL_MODE'; payload: 'pen' | 'eraser' }
@@ -177,8 +189,10 @@ export const DEFAULT_PROGRESS: ProgressStats = {
 };
 
 export const DEFAULT_APP_STATE: AppState = {
+  mode: 'canvas',
   config: DEFAULT_CONFIG,
   session: null,
+  wordProblemSession: null,
   progress: DEFAULT_PROGRESS,
   toolSettings: {
     color: '#000000',

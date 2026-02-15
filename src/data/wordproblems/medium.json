@@ -1,0 +1,1946 @@
+[
+  {
+    "id": "M1",
+    "difficulty": "medium",
+    "text": "A puppy has 12 bones and buries 5 of them. How many bones does it still have?",
+    "answer": 7,
+    "operation": [
+      "a"
+    ],
+    "solution": "12 - 5"
+  },
+  {
+    "id": "M2",
+    "difficulty": "medium",
+    "text": "A squirrel collects 9 nuts in the morning and 6 more in the afternoon. How many nuts total?",
+    "answer": 15,
+    "operation": [
+      "a"
+    ],
+    "solution": "9 + 6"
+  },
+  {
+    "id": "M3",
+    "difficulty": "medium",
+    "text": "A rabbit has 14 carrots but gives 4 away. How many carrots remain?",
+    "answer": 10,
+    "operation": [
+      "s"
+    ],
+    "solution": "14 - 4"
+  },
+  {
+    "id": "M4",
+    "difficulty": "medium",
+    "text": "A zoo has 11 monkeys and brings in 7 more. How many monkeys now?",
+    "answer": 18,
+    "operation": [
+      "a"
+    ],
+    "solution": "11 + 7"
+  },
+  {
+    "id": "M5",
+    "difficulty": "medium",
+    "text": "A penguin sees 15 fish swimming, but 6 swim away. How many fish remain?",
+    "answer": 9,
+    "operation": [
+      "s"
+    ],
+    "solution": "15 - 6"
+  },
+  {
+    "id": "M6",
+    "difficulty": "medium",
+    "text": "An astronaut counts 10 stars and later sees 9 more. How many stars total?",
+    "answer": 19,
+    "operation": [
+      "a"
+    ],
+    "solution": "10 + 9"
+  },
+  {
+    "id": "M7",
+    "difficulty": "medium",
+    "text": "A space rover collects 13 rock samples but drops 4. How many samples are left?",
+    "answer": 9,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "13 + 4"
+  },
+  {
+    "id": "M8",
+    "difficulty": "medium",
+    "text": "A rocket has 16 buttons, and engineers add 3 more. How many buttons now?",
+    "answer": 19,
+    "operation": [
+      "a"
+    ],
+    "solution": "16 + 3"
+  },
+  {
+    "id": "M9",
+    "difficulty": "medium",
+    "text": "A moon base has 18 robots. Two go offline. How many stay online?",
+    "answer": 16,
+    "operation": [
+      "s"
+    ],
+    "solution": "18"
+  },
+  {
+    "id": "M10",
+    "difficulty": "medium",
+    "text": "A spaceship launches with 9 astronauts. 5 more join later. How many astronauts?",
+    "answer": 14,
+    "operation": [
+      "a"
+    ],
+    "solution": "9 + 5"
+  },
+  {
+    "id": "M11",
+    "difficulty": "medium",
+    "text": "A soccer team scores 7 goals today and 6 goals yesterday. How many total?",
+    "answer": 13,
+    "operation": [
+      "a"
+    ],
+    "solution": "7 - 6"
+  },
+  {
+    "id": "M12",
+    "difficulty": "medium",
+    "text": "A basketball coach has 14 balls but gives 5 away. How many remain?",
+    "answer": 9,
+    "operation": [
+      "s"
+    ],
+    "solution": "14 - 5"
+  },
+  {
+    "id": "M13",
+    "difficulty": "medium",
+    "text": "A tennis player hits 11 balls and then hits 4 more. How many hits total?",
+    "answer": 15,
+    "operation": [
+      "a"
+    ],
+    "solution": "11 + 4"
+  },
+  {
+    "id": "M14",
+    "difficulty": "medium",
+    "text": "A baseball team has 17 bats and loses 8. How many bats remain?",
+    "answer": 9,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "17 - 8"
+  },
+  {
+    "id": "M15",
+    "difficulty": "medium",
+    "text": "A runner completes 13 laps and then runs 5 more. How many laps total?",
+    "answer": 18,
+    "operation": [
+      "a"
+    ],
+    "solution": "13 + 5"
+  },
+  {
+    "id": "M16",
+    "difficulty": "medium",
+    "text": "A holiday tree has 12 ornaments. Kids add 5 more. How many ornaments now?",
+    "answer": 17,
+    "operation": [
+      "a"
+    ],
+    "solution": "12 + 5"
+  },
+  {
+    "id": "M17",
+    "difficulty": "medium",
+    "text": "A child decorates 15 cookies but eats 7. How many decorated cookies remain?",
+    "answer": 8,
+    "operation": [
+      "s"
+    ],
+    "solution": "15 - 7"
+  },
+  {
+    "id": "M18",
+    "difficulty": "medium",
+    "text": "There are 14 presents under the tree. Someone adds 6 more. How many total?",
+    "answer": 20,
+    "operation": [
+      "a"
+    ],
+    "solution": "14 + 6"
+  },
+  {
+    "id": "M19",
+    "difficulty": "medium",
+    "text": "A pumpkin patch has 18 pumpkins. Kids pick 9. How many pumpkins remain?",
+    "answer": 9,
+    "operation": [
+      "s"
+    ],
+    "solution": "18 - 9"
+  },
+  {
+    "id": "M20",
+    "difficulty": "medium",
+    "text": "A kid collects 17 Easter eggs but drops 6. How many eggs remain?",
+    "answer": 11,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "17 + 6"
+  },
+  {
+    "id": "M21",
+    "difficulty": "medium",
+    "text": "A child has 13 toy cars and gets 5 more. How many cars now?",
+    "answer": 18,
+    "operation": [
+      "a"
+    ],
+    "solution": "13 + 5"
+  },
+  {
+    "id": "M22",
+    "difficulty": "medium",
+    "text": "A toy robot has 16 gears. The child removes 7. How many gears remain?",
+    "answer": 9,
+    "operation": [
+      "s"
+    ],
+    "solution": "16 - 7"
+  },
+  {
+    "id": "M23",
+    "difficulty": "medium",
+    "text": "A kid builds with 19 blocks but uses 8 on a tower. How many blocks are left?",
+    "answer": 11,
+    "operation": [
+      "s"
+    ],
+    "solution": "19 - 8"
+  },
+  {
+    "id": "M24",
+    "difficulty": "medium",
+    "text": "A toy box has 14 dolls and 6 action figures. How many toys total?",
+    "answer": 20,
+    "operation": [
+      "a"
+    ],
+    "solution": "14 - 6"
+  },
+  {
+    "id": "M25",
+    "difficulty": "medium",
+    "text": "A child has 15 crayons and gives 6 away. How many crayons remain?",
+    "answer": 9,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "15 - 6"
+  },
+  {
+    "id": "M26",
+    "difficulty": "medium",
+    "text": "A racetrack has 17 cars. Three stop racing. How many cars still race?",
+    "answer": 14,
+    "operation": [
+      "s"
+    ],
+    "solution": "17"
+  },
+  {
+    "id": "M27",
+    "difficulty": "medium",
+    "text": "A kid lines up 9 blue cars and 7 red cars. How many cars total?",
+    "answer": 16,
+    "operation": [
+      "a"
+    ],
+    "solution": "9 - 7"
+  },
+  {
+    "id": "M28",
+    "difficulty": "medium",
+    "text": "A garage has 18 cars. Four drive away. How many remain?",
+    "answer": 14,
+    "operation": [
+      "s"
+    ],
+    "solution": "18"
+  },
+  {
+    "id": "M29",
+    "difficulty": "medium",
+    "text": "A child sees 12 cars on the road and later sees 6 more. How many cars total?",
+    "answer": 18,
+    "operation": [
+      "a"
+    ],
+    "solution": "12 + 6"
+  },
+  {
+    "id": "M30",
+    "difficulty": "medium",
+    "text": "A toy shop sells 20 cars but had 28. How many cars are left?",
+    "answer": 8,
+    "operation": [
+      "s"
+    ],
+    "solution": "20 - 28"
+  },
+  {
+    "id": "M31",
+    "difficulty": "medium",
+    "text": "Pikachu finds 11 berries and Ash gives him 7 more. How many berries now?",
+    "answer": 18,
+    "operation": [
+      "a"
+    ],
+    "solution": "11 + 7"
+  },
+  {
+    "id": "M32",
+    "difficulty": "medium",
+    "text": "Charmander sees 15 small rocks. Four roll away. How many remain?",
+    "answer": 11,
+    "operation": [
+      "s"
+    ],
+    "solution": "15"
+  },
+  {
+    "id": "M33",
+    "difficulty": "medium",
+    "text": "Squirtle splashes 13 kids, but 5 leave. How many kids remain?",
+    "answer": 8,
+    "operation": [
+      "s"
+    ],
+    "solution": "13 - 5"
+  },
+  {
+    "id": "M34",
+    "difficulty": "medium",
+    "text": "Eevee has 10 friends join her and 6 more arrive. How many friends total?",
+    "answer": 16,
+    "operation": [
+      "a"
+    ],
+    "solution": "10 + 6"
+  },
+  {
+    "id": "M35",
+    "difficulty": "medium",
+    "text": "Bulbasaur has 18 leaves but drops 9. How many leaves remain?",
+    "answer": 9,
+    "operation": [
+      "s"
+    ],
+    "solution": "18 - 9"
+  },
+  {
+    "id": "M36",
+    "difficulty": "medium",
+    "text": "Bluey has 12 toys. Bingo adds 5 more. How many toys do they have?",
+    "answer": 17,
+    "operation": [
+      "a"
+    ],
+    "solution": "12 + 5"
+  },
+  {
+    "id": "M37",
+    "difficulty": "medium",
+    "text": "Dad makes 14 pancakes. Bluey eats 4 and Bingo eats 3. How many remain?",
+    "answer": 7,
+    "operation": [
+      "s"
+    ],
+    "solution": "14 - 4 - 3"
+  },
+  {
+    "id": "M38",
+    "difficulty": "medium",
+    "text": "Bluey finds 16 butterflies but 7 fly away. How many butterflies remain?",
+    "answer": 9,
+    "operation": [
+      "s"
+    ],
+    "solution": "16 + 7"
+  },
+  {
+    "id": "M39",
+    "difficulty": "medium",
+    "text": "Bluey has 18 crayons and gives 9 to Bingo. How many remain?",
+    "answer": 9,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "18 - 9"
+  },
+  {
+    "id": "M40",
+    "difficulty": "medium",
+    "text": "Bingo has 11 blocks and Bluey adds 7 more. How many blocks now?",
+    "answer": 18,
+    "operation": [
+      "a"
+    ],
+    "solution": "11 + 7"
+  },
+  {
+    "id": "M41",
+    "difficulty": "medium",
+    "text": "Numberblock Five meets Numberblock Seven. How many blocks total?",
+    "answer": 12,
+    "operation": [
+      "a"
+    ],
+    "solution": ""
+  },
+  {
+    "id": "M42",
+    "difficulty": "medium",
+    "text": "Numberblock Eight splits off 3 blocks. How many blocks remain?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "3"
+  },
+  {
+    "id": "M43",
+    "difficulty": "medium",
+    "text": "Numberblock Nine collects 6 stars and later collects 4 more. How many stars?",
+    "answer": 10,
+    "operation": [
+      "a"
+    ],
+    "solution": "6 + 4"
+  },
+  {
+    "id": "M44",
+    "difficulty": "medium",
+    "text": "Numberblock Ten gets 5 balloons but gives away 3. How many balloons remain?",
+    "answer": 12,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "5 + 3"
+  },
+  {
+    "id": "M45",
+    "difficulty": "medium",
+    "text": "Numberblock Eleven rolls 9 dice and then 2 more. How many dice total?",
+    "answer": 11,
+    "operation": [
+      "a"
+    ],
+    "solution": "9 + 2"
+  },
+  {
+    "id": "M46",
+    "difficulty": "medium",
+    "text": "A dog finds 13 sticks but loses 5. How many sticks remain?",
+    "answer": 8,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "13 + 5"
+  },
+  {
+    "id": "M47",
+    "difficulty": "medium",
+    "text": "A farm has 19 sheep and adds 6 more. How many sheep now?",
+    "answer": 25,
+    "operation": [
+      "a"
+    ],
+    "solution": "19 + 6"
+  },
+  {
+    "id": "M48",
+    "difficulty": "medium",
+    "text": "A duck swims with 16 ducklings. Four swim away. How many stay?",
+    "answer": 12,
+    "operation": [
+      "s"
+    ],
+    "solution": "16"
+  },
+  {
+    "id": "M49",
+    "difficulty": "medium",
+    "text": "A frog jumps on 15 lily pads but skips 6. How many does it jump on?",
+    "answer": 9,
+    "operation": [
+      "s"
+    ],
+    "solution": "15 - 6"
+  },
+  {
+    "id": "M50",
+    "difficulty": "medium",
+    "text": "A cat sees 17 falling leaves, but 8 land. How many are still falling?",
+    "answer": 9,
+    "operation": [
+      "s"
+    ],
+    "solution": "17 - 8"
+  },
+  {
+    "id": "M51",
+    "difficulty": "medium",
+    "text": "A rocket has 14 astronauts. Three leave for a moonwalk. How many stay onboard?",
+    "answer": 11,
+    "operation": [
+      "s"
+    ],
+    "solution": "14"
+  },
+  {
+    "id": "M52",
+    "difficulty": "medium",
+    "text": "A space alien sees 12 glowing rocks and later sees 7 more. How many rocks total?",
+    "answer": 19,
+    "operation": [
+      "a"
+    ],
+    "solution": "12 + 7"
+  },
+  {
+    "id": "M53",
+    "difficulty": "medium",
+    "text": "A space shuttle carries 18 boxes and unloads 9. How many boxes remain?",
+    "answer": 9,
+    "operation": [
+      "s"
+    ],
+    "solution": "18 - 9"
+  },
+  {
+    "id": "M54",
+    "difficulty": "medium",
+    "text": "A moon base has 20 robots. Five go offline. How many remain online?",
+    "answer": 15,
+    "operation": [
+      "s"
+    ],
+    "solution": "20"
+  },
+  {
+    "id": "M55",
+    "difficulty": "medium",
+    "text": "A starship launches 17 probes and retrieves 8. How many are still out?",
+    "answer": 9,
+    "operation": [
+      "s"
+    ],
+    "solution": "17 - 8"
+  },
+  {
+    "id": "M56",
+    "difficulty": "medium",
+    "text": "A basketball team has 19 balls but loses 10. How many remain?",
+    "answer": 9,
+    "operation": [
+      "s"
+    ],
+    "solution": "19 - 10"
+  },
+  {
+    "id": "M57",
+    "difficulty": "medium",
+    "text": "There are 15 cones on the field. The coach adds 6 more. How many cones now?",
+    "answer": 21,
+    "operation": [
+      "a"
+    ],
+    "solution": "15 + 6"
+  },
+  {
+    "id": "M58",
+    "difficulty": "medium",
+    "text": "A swimmer completes 16 laps and then 7 more. How many laps total?",
+    "answer": 23,
+    "operation": [
+      "a"
+    ],
+    "solution": "16 + 7"
+  },
+  {
+    "id": "M59",
+    "difficulty": "medium",
+    "text": "A tennis team has 14 rackets and gives away 6. How many remain?",
+    "answer": 8,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "14 - 6"
+  },
+  {
+    "id": "M60",
+    "difficulty": "medium",
+    "text": "A goalie blocks 11 shots and later blocks 4 more. How many shots blocked?",
+    "answer": 15,
+    "operation": [
+      "a"
+    ],
+    "solution": "11 + 4"
+  },
+  {
+    "id": "M61",
+    "difficulty": "medium",
+    "text": "A child collects 12 candy canes and then gets 7 more. How many candy canes total?",
+    "answer": 19,
+    "operation": [
+      "a"
+    ],
+    "solution": "12 + 7"
+  },
+  {
+    "id": "M62",
+    "difficulty": "medium",
+    "text": "A family decorates with 18 lights but 9 stop working. How many still work?",
+    "answer": 9,
+    "operation": [
+      "s"
+    ],
+    "solution": "18 - 9"
+  },
+  {
+    "id": "M63",
+    "difficulty": "medium",
+    "text": "There are 16 presents. Kids open 8. How many presents stay wrapped?",
+    "answer": 8,
+    "operation": [
+      "s"
+    ],
+    "solution": "16 - 8"
+  },
+  {
+    "id": "M64",
+    "difficulty": "medium",
+    "text": "A snowman has 13 snowballs but loses 5. How many remain?",
+    "answer": 8,
+    "operation": [
+      "s"
+    ],
+    "solution": "13 - 5"
+  },
+  {
+    "id": "M65",
+    "difficulty": "medium",
+    "text": "A child gathers 14 Halloween candies and trades away 5. How many remain?",
+    "answer": 9,
+    "operation": [
+      "s"
+    ],
+    "solution": "14 - 5"
+  },
+  {
+    "id": "M66",
+    "difficulty": "medium",
+    "text": "A toy box has 17 cars and 8 trucks. How many vehicles total?",
+    "answer": 25,
+    "operation": [
+      "a"
+    ],
+    "solution": "17 - 8"
+  },
+  {
+    "id": "M67",
+    "difficulty": "medium",
+    "text": "A kid lines up 12 dinosaurs and adds 7 more. How many dinosaurs?",
+    "answer": 19,
+    "operation": [
+      "a"
+    ],
+    "solution": "12 + 7"
+  },
+  {
+    "id": "M68",
+    "difficulty": "medium",
+    "text": "A child builds a tower using 14 bricks but removes 6. How many bricks stay?",
+    "answer": 8,
+    "operation": [
+      "s"
+    ],
+    "solution": "14 - 6"
+  },
+  {
+    "id": "M69",
+    "difficulty": "medium",
+    "text": "A puzzle has 20 pieces but 11 are missing. How many pieces remain?",
+    "answer": 9,
+    "operation": [
+      "s"
+    ],
+    "solution": "20 - 11"
+  },
+  {
+    "id": "M70",
+    "difficulty": "medium",
+    "text": "A child has 13 balloons and gets 6 more. How many balloons total?",
+    "answer": 19,
+    "operation": [
+      "a"
+    ],
+    "solution": "13 + 6"
+  },
+  {
+    "id": "Q6",
+    "difficulty": "medium",
+    "text": "A bakery makes 12 muffins, sells 5, then bakes 3 more. How many muffins now?",
+    "answer": 10,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "12 + 5 - 3"
+  },
+  {
+    "id": "Q7",
+    "difficulty": "medium",
+    "text": "A chef chops 9 carrots, uses 4 in a soup, then chops 3 more. How many chopped carrots now?",
+    "answer": 8,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "9 + 4 - 3"
+  },
+  {
+    "id": "Q8",
+    "difficulty": "medium",
+    "text": "A fridge has 15 apples. Kids eat 6, then parents buy 4 more. How many apples now?",
+    "answer": 13,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "15 + 6 - 4"
+  },
+  {
+    "id": "Q9",
+    "difficulty": "medium",
+    "text": "A child packs 10 candies for a trip but gives 3 to a friend. How many candies remain?",
+    "answer": 7,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "10 - 3"
+  },
+  {
+    "id": "Q10",
+    "difficulty": "medium",
+    "text": "A box has 18 crackers. A child eats 7. How many crackers left?",
+    "answer": 11,
+    "operation": [
+      "s"
+    ],
+    "solution": "18 - 7"
+  },
+  {
+    "id": "Q16",
+    "difficulty": "medium",
+    "text": "A family buys 14 festival lights, breaks 5, then buys 4 more. How many lights now?",
+    "answer": 13,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "14 + 5 - 4"
+  },
+  {
+    "id": "Q17",
+    "difficulty": "medium",
+    "text": "A parade has 20 balloons. 9 float away, then 6 new balloons are added. How many balloons now?",
+    "answer": 17,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "20 + 9 + 6"
+  },
+  {
+    "id": "Q18",
+    "difficulty": "medium",
+    "text": "A holiday stand sells 16 gifts, gets 7 more delivered. How many gifts total?",
+    "answer": 23,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "16 + 7"
+  },
+  {
+    "id": "Q19",
+    "difficulty": "medium",
+    "text": "A Diwali display has 12 lamps. 4 go out, 6 are added. How many lamps now?",
+    "answer": 14,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "12 + 4 + 6"
+  },
+  {
+    "id": "Q20",
+    "difficulty": "medium",
+    "text": "A kid collects 10 festival cards and trades away 3. How many left?",
+    "answer": 7,
+    "operation": [
+      "s"
+    ],
+    "solution": "10 + 3"
+  },
+  {
+    "id": "Q26",
+    "difficulty": "medium",
+    "text": "A drawer holds 16 forks but 6 are taken for dinner. How many forks left?",
+    "answer": 10,
+    "operation": [
+      "s"
+    ],
+    "solution": "16 - 6"
+  },
+  {
+    "id": "Q27",
+    "difficulty": "medium",
+    "text": "A chef grabs 12 bowls, uses 5, then grabs 4 more. How many bowls does the chef now have?",
+    "answer": 11,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "12 + 5 - 4"
+  },
+  {
+    "id": "Q28",
+    "difficulty": "medium",
+    "text": "A kitchen has 18 cups. 7 break and 3 new cups are bought. How many cups now?",
+    "answer": 14,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "18 - 7 - 3"
+  },
+  {
+    "id": "Q29",
+    "difficulty": "medium",
+    "text": "A cook lays out 10 napkins and later adds 6 more. How many napkins total?",
+    "answer": 16,
+    "operation": [
+      "a"
+    ],
+    "solution": "10 + 6"
+  },
+  {
+    "id": "Q30",
+    "difficulty": "medium",
+    "text": "A shelf has 20 plates. A child takes 8 to the table. How many plates remain?",
+    "answer": 12,
+    "operation": [
+      "s"
+    ],
+    "solution": "20 - 8"
+  },
+  {
+    "id": "Q36",
+    "difficulty": "medium",
+    "text": "A child has 14 books, gives away 5, then gets 3 new ones. How many books total?",
+    "answer": 12,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "14 + 5 - 3"
+  },
+  {
+    "id": "Q37",
+    "difficulty": "medium",
+    "text": "A teacher has 18 books, lends 7 to students, then buys 4 more. How many does the teacher have now?",
+    "answer": 15,
+    "operation": [
+      "a"
+    ],
+    "solution": "18 + 7 - 4"
+  },
+  {
+    "id": "Q38",
+    "difficulty": "medium",
+    "text": "A bookshelf holds 20 books. 11 fall over. How many stay standing?",
+    "answer": 9,
+    "operation": [
+      "s"
+    ],
+    "solution": "20 - 11"
+  },
+  {
+    "id": "Q39",
+    "difficulty": "medium",
+    "text": "A child checks out 12 books, reads 5, and returns 4. How many books still with them?",
+    "answer": 7,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "12 - 5 - 4"
+  },
+  {
+    "id": "Q40",
+    "difficulty": "medium",
+    "text": "A library carts 22 books to a room, removes 8, then adds 5. How many now?",
+    "answer": 19,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "22 + 8 - 5"
+  },
+  {
+    "id": "Q46",
+    "difficulty": "medium",
+    "text": "A student has 13 pencils, gives away 6, then buys 4 more. How many pencils now?",
+    "answer": 11,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "13 + 6 - 4"
+  },
+  {
+    "id": "Q47",
+    "difficulty": "medium",
+    "text": "A pencil case holds 15 pencils. 8 fall out, and 3 are added. How many pencils inside now?",
+    "answer": 10,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "15 + 8 + 3"
+  },
+  {
+    "id": "Q48",
+    "difficulty": "medium",
+    "text": "A class receives 20 pencils and uses 9. How many pencils remain unused?",
+    "answer": 11,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "20 - 9"
+  },
+  {
+    "id": "Q49",
+    "difficulty": "medium",
+    "text": "A teacher hands out 16 pencils, collects 7 back, then finds 4 more. How many pencils now?",
+    "answer": 13,
+    "operation": [
+      "a"
+    ],
+    "solution": "16 + 7 + 4"
+  },
+  {
+    "id": "Q50",
+    "difficulty": "medium",
+    "text": "A child buys 18 pencils. 5 break and 6 are given to friends. How many still with the child?",
+    "answer": 7,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "18 - 5 - 6"
+  },
+  {
+    "id": "Q56",
+    "difficulty": "medium",
+    "text": "A student has 14 pens, loses 6, then buys 5 more. How many pens now?",
+    "answer": 13,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "14 + 6 - 5"
+  },
+  {
+    "id": "Q57",
+    "difficulty": "medium",
+    "text": "A pen box has 19 pens. 7 dry out, but 4 new pens are added. How many pens now?",
+    "answer": 16,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "19 + 7 + 4"
+  },
+  {
+    "id": "Q58",
+    "difficulty": "medium",
+    "text": "A teacher collects 11 pens from students, finds 6 more in a drawer. How many pens total?",
+    "answer": 17,
+    "operation": [
+      "a"
+    ],
+    "solution": "11 + 6"
+  },
+  {
+    "id": "Q59",
+    "difficulty": "medium",
+    "text": "A class has 16 pens. Students use 8, but 5 new ones arrive. How many pens now?",
+    "answer": 13,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "16 - 8 - 5"
+  },
+  {
+    "id": "Q60",
+    "difficulty": "medium",
+    "text": "A child starts with 20 pens, gives 9 away, then finds 3. How many pens now?",
+    "answer": 14,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "20 + 9 - 3"
+  },
+  {
+    "id": "Q66",
+    "difficulty": "medium",
+    "text": "A child has 15 cookies, shares 6, then gets 4 more. How many cookies now?",
+    "answer": 13,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "15 + 6 + 4"
+  },
+  {
+    "id": "Q67",
+    "difficulty": "medium",
+    "text": "A fridge has 22 oranges. Family eats 9, then buys 7. How many now?",
+    "answer": 20,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "22 - 9 - 7"
+  },
+  {
+    "id": "Q68",
+    "difficulty": "medium",
+    "text": "A lunchbox has 14 snacks. The child eats 4 and trades 3. How many left?",
+    "answer": 7,
+    "operation": [
+      "s"
+    ],
+    "solution": "14 - 4 - 3"
+  },
+  {
+    "id": "Q69",
+    "difficulty": "medium",
+    "text": "A kitchen has 20 apples. 11 are used to bake pies. How many remain?",
+    "answer": 9,
+    "operation": [
+      "s"
+    ],
+    "solution": "20 - 11"
+  },
+  {
+    "id": "Q70",
+    "difficulty": "medium",
+    "text": "A bakery has 17 pastries and sells 8. How many pastries left?",
+    "answer": 9,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "17 - 8"
+  },
+  {
+    "id": "Q76",
+    "difficulty": "medium",
+    "text": "A festival booth has 19 lanterns, sells 8, then adds 6. How many lanterns remain?",
+    "answer": 17,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "19 + 8 - 6"
+  },
+  {
+    "id": "Q77",
+    "difficulty": "medium",
+    "text": "A child collects 21 festival stickers, gives away 9, and gets 4 more. How many stickers now?",
+    "answer": 16,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "21 + 9 + 4"
+  },
+  {
+    "id": "Q78",
+    "difficulty": "medium",
+    "text": "A parade makes 18 banners. 7 tear, but 5 new ones are made. How many banners now?",
+    "answer": 16,
+    "operation": [
+      "s"
+    ],
+    "solution": "18 - 7 - 5"
+  },
+  {
+    "id": "Q79",
+    "difficulty": "medium",
+    "text": "A holiday store stocks 23 items and sells 14. How many remain?",
+    "answer": 9,
+    "operation": [
+      "s"
+    ],
+    "solution": "23 - 14"
+  },
+  {
+    "id": "Q80",
+    "difficulty": "medium",
+    "text": "A New Year party has 20 balloons; 9 pop and 4 more are added. How many balloons now?",
+    "answer": 15,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "20 + 9 + 4"
+  },
+  {
+    "id": "Q86",
+    "difficulty": "medium",
+    "text": "A kitchen starts with 18 utensils, uses 7 for cooking, then adds 4 new ones. How many utensils now?",
+    "answer": 15,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "18 + 7 - 4"
+  },
+  {
+    "id": "Q87",
+    "difficulty": "medium",
+    "text": "A drawer has 22 spoons, 9 are removed, and 5 are added. How many spoons now?",
+    "answer": 18,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "22 + 9 + 5"
+  },
+  {
+    "id": "Q88",
+    "difficulty": "medium",
+    "text": "A chef uses 16 bowls, breaks 6, and replaces 4. How many bowls now?",
+    "answer": 14,
+    "operation": [
+      "s"
+    ],
+    "solution": "16 - 6 - 4"
+  },
+  {
+    "id": "Q89",
+    "difficulty": "medium",
+    "text": "A kitchen buys 20 plates, uses 12, and buys 6 more. How many plates total now?",
+    "answer": 14,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "20 + 12 - 6"
+  },
+  {
+    "id": "Q90",
+    "difficulty": "medium",
+    "text": "A pantry holds 15 cups, 8 are used, but 5 come back cleaned. How many cups now?",
+    "answer": 12,
+    "operation": [
+      "s"
+    ],
+    "solution": "15 - 8 - 5"
+  },
+  {
+    "id": "Q96",
+    "difficulty": "medium",
+    "text": "A teacher has 18 notebooks, gives 7 to students, and receives 4 new ones. How many now?",
+    "answer": 15,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "18 - 7 - 4"
+  },
+  {
+    "id": "Q97",
+    "difficulty": "medium",
+    "text": "A class has 14 erasers. Students use 5 and then 3 new ones are added. How many erasers now?",
+    "answer": 12,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "14 + 5 + 3"
+  },
+  {
+    "id": "Q98",
+    "difficulty": "medium",
+    "text": "A student collects 20 markers, loses 11, then finds 6 under the desk. How many now?",
+    "answer": 15,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "20 + 11 + 6"
+  },
+  {
+    "id": "Q99",
+    "difficulty": "medium",
+    "text": "A teacher hands out 27 worksheets and gets 13 back. How many still out?",
+    "answer": 14,
+    "operation": [
+      "a"
+    ],
+    "solution": "27 + 13"
+  },
+  {
+    "id": "Q100",
+    "difficulty": "medium",
+    "text": "A school buys 24 rulers. 9 break, and 7 new ones arrive. How many rulers now?",
+    "answer": 22,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "24 - 9 - 7"
+  },
+  {
+    "id": "MS31",
+    "difficulty": "medium",
+    "text": "Logan read 5 pages, then 4 more, and reread 2. How many pages did he read altogether?",
+    "answer": 11,
+    "operation": [
+      "a"
+    ],
+    "solution": "5 + 4 - 2"
+  },
+  {
+    "id": "MS32",
+    "difficulty": "medium",
+    "text": "Abigail planted 6 seeds, then 5 more, but 3 didn\u2019t sprout. How many sprouted?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "6 + 5 - 3"
+  },
+  {
+    "id": "MS33",
+    "difficulty": "medium",
+    "text": "Jacob built a tower with 7 blocks, added 3, then 2 fell off. How many blocks are still on the tower?",
+    "answer": 8,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "7 + 3 + 2"
+  },
+  {
+    "id": "MS34",
+    "difficulty": "medium",
+    "text": "Emily had 8 crayons, used 3, then found 4 more. How many crayons now?",
+    "answer": 9,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "8 + 3 - 4"
+  },
+  {
+    "id": "MS35",
+    "difficulty": "medium",
+    "text": "Michael caught 6 fireflies, caught 4 more, then released 5. How many fireflies does he still have?",
+    "answer": 5,
+    "operation": [
+      "s"
+    ],
+    "solution": "6 + 4 - 5"
+  },
+  {
+    "id": "MS36",
+    "difficulty": "medium",
+    "text": "Sofia picked 9 apples, used 4 to make pie, then picked 3 more. How many apples now?",
+    "answer": 8,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "9 + 4 - 3"
+  },
+  {
+    "id": "MS37",
+    "difficulty": "medium",
+    "text": "Daniel found 7 marbles, bought 6 more, then lost 3. How many marbles does he have?",
+    "answer": 10,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "7 + 6 - 3"
+  },
+  {
+    "id": "MS38",
+    "difficulty": "medium",
+    "text": "Avery collected 8 feathers, dropped 3, then found 4 more. How many feathers total now?",
+    "answer": 9,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "8 + 3 - 4"
+  },
+  {
+    "id": "MS39",
+    "difficulty": "medium",
+    "text": "Sebastian made 6 drawings, made 5 more, then gave 4 away. How many drawings left?",
+    "answer": 7,
+    "operation": [
+      "s"
+    ],
+    "solution": "6 + 5 - 4"
+  },
+  {
+    "id": "MS40",
+    "difficulty": "medium",
+    "text": "Nora had 10 beads, used 5 for a necklace, then found 4 more. How many beads now?",
+    "answer": 9,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "10 + 5 - 4"
+  },
+  {
+    "id": "MS41",
+    "difficulty": "medium",
+    "text": "David baked 8 cookies, ate 2, then baked 3 more. How many cookies does he have?",
+    "answer": 9,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "8 + 2 - 3"
+  },
+  {
+    "id": "MS42",
+    "difficulty": "medium",
+    "text": "Scarlett counted 9 birds, 4 flew away, then 6 more arrived. How many birds now?",
+    "answer": 11,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "9 + 4 - 6"
+  },
+  {
+    "id": "MS43",
+    "difficulty": "medium",
+    "text": "Joseph read 12 pages, then 4 more, then lost his place and reread 3. How many total pages read?",
+    "answer": 19,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "12 + 4 - 3"
+  },
+  {
+    "id": "MS44",
+    "difficulty": "medium",
+    "text": "Victoria picked 7 strawberries, ate 2, then picked 6 more. How many strawberries now?",
+    "answer": 11,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "7 + 2 - 6"
+  },
+  {
+    "id": "MS45",
+    "difficulty": "medium",
+    "text": "Theo packed 5 snacks, ate 1, then packed 4 more. How many snacks now?",
+    "answer": 8,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "5 + 1 - 4"
+  },
+  {
+    "id": "MS46",
+    "difficulty": "medium",
+    "text": "Natalie had 11 crayons, used 4, then found 5 more. How many crayons now?",
+    "answer": 12,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "11 + 4 - 5"
+  },
+  {
+    "id": "MS47",
+    "difficulty": "medium",
+    "text": "Dylan collected 10 rocks, lost 3, then found 6 more. How many rocks now?",
+    "answer": 13,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "10 + 3 - 6"
+  },
+  {
+    "id": "MS48",
+    "difficulty": "medium",
+    "text": "Hazel made 9 paper snowflakes, gave 4 away, then made 5 more. How many does she have now?",
+    "answer": 10,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "9 + 4 - 5"
+  },
+  {
+    "id": "MS49",
+    "difficulty": "medium",
+    "text": "Eli saw 12 bees, 5 flew away, then 4 arrived. How many bees are there now?",
+    "answer": 11,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "12 - 5 - 4"
+  },
+  {
+    "id": "MS50",
+    "difficulty": "medium",
+    "text": "Aurora found 8 pretty stones, lost 2, then found 3 more. How many stones now?",
+    "answer": 9,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "8 + 2 - 3"
+  },
+  {
+    "id": "MS51",
+    "difficulty": "medium",
+    "text": "Hudson bought 6 balloons, popped 2, then bought 4 more. How many balloons now?",
+    "answer": 8,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "6 + 2 - 4"
+  },
+  {
+    "id": "MS52",
+    "difficulty": "medium",
+    "text": "Violet had 7 cookies, ate 3, then baked 5 more. How many cookies does she have?",
+    "answer": 9,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "7 + 3 - 5"
+  },
+  {
+    "id": "MS53",
+    "difficulty": "medium",
+    "text": "Hunter built a structure with 10 blocks, added 5, then 6 fell off. How many blocks remain?",
+    "answer": 9,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "10 + 5 + 6"
+  },
+  {
+    "id": "MS54",
+    "difficulty": "medium",
+    "text": "Penelope planted 9 flowers, 4 wilted, then she planted 6 more. How many flowers now?",
+    "answer": 11,
+    "operation": [
+      "a"
+    ],
+    "solution": "9 + 4 - 6"
+  },
+  {
+    "id": "MS55",
+    "difficulty": "medium",
+    "text": "Levi had 11 crayons, gave 5 away, then got 3 more. How many crayons now?",
+    "answer": 9,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "11 + 5 + 3"
+  },
+  {
+    "id": "MS56",
+    "difficulty": "medium",
+    "text": "Claire collected 12 seashells, gave 5 to her sister, and then found 4 more. How many seashells remain?",
+    "answer": 11,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "12 + 5 - 4"
+  },
+  {
+    "id": "MS57",
+    "difficulty": "medium",
+    "text": "Owen had 13 marbles, lost 6, then found 2 more. How many marbles left?",
+    "answer": 9,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "13 + 6 - 2"
+  },
+  {
+    "id": "MS58",
+    "difficulty": "medium",
+    "text": "Stella caught 10 fireflies, let 5 go, then caught 3 more. How many fireflies now?",
+    "answer": 8,
+    "operation": [
+      "a"
+    ],
+    "solution": "10 + 5 - 3"
+  },
+  {
+    "id": "MS59",
+    "difficulty": "medium",
+    "text": "Luke wrote 7 pages of homework, then 5 more, but erased 3 pages. How many finished pages?",
+    "answer": 9,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "7 + 5 - 3"
+  },
+  {
+    "id": "MS60",
+    "difficulty": "medium",
+    "text": "Zoe found 10 stickers, gave 4 away, then got 6 more. How many stickers now?",
+    "answer": 12,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "10 + 4 + 6"
+  },
+  {
+    "id": "MS61",
+    "difficulty": "medium",
+    "text": "Isaac picked 14 apples, used 6 for pie, then picked 5 more. How many apples now?",
+    "answer": 13,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "14 + 6 - 5"
+  },
+  {
+    "id": "MS62",
+    "difficulty": "medium",
+    "text": "Hannah read 9 pages, then 8 more, and reread 2. How many pages total read?",
+    "answer": 19,
+    "operation": [
+      "a"
+    ],
+    "solution": "9 + 8 - 2"
+  },
+  {
+    "id": "MS63",
+    "difficulty": "medium",
+    "text": "Anthony bought 13 stickers, used 7, then bought 4 more. How many stickers now?",
+    "answer": 10,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "13 + 7 - 4"
+  },
+  {
+    "id": "MS64",
+    "difficulty": "medium",
+    "text": "Lillian found 11 beads, lost 3, then found 5 more. How many beads now?",
+    "answer": 13,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "11 + 3 - 5"
+  },
+  {
+    "id": "MS65",
+    "difficulty": "medium",
+    "text": "Jack built 8 towers, knocked down 3, then built 6 more. How many towers now?",
+    "answer": 11,
+    "operation": [
+      "a"
+    ],
+    "solution": "8 + 3 - 6"
+  },
+  {
+    "id": "MS66",
+    "difficulty": "medium",
+    "text": "Addison drew 10 flowers, erased 4, then drew 7 more. How many flowers are on her paper?",
+    "answer": 13,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "10 + 4 + 7"
+  },
+  {
+    "id": "MS67",
+    "difficulty": "medium",
+    "text": "Wyatt read 12 pages, then 5 more, but forgot 3 and reread them. How many total pages read?",
+    "answer": 20,
+    "operation": [
+      "a"
+    ],
+    "solution": "12 + 5 + 3"
+  },
+  {
+    "id": "MS68",
+    "difficulty": "medium",
+    "text": "Samantha collected 7 marbles, found 9 more, then gave 4 away. How many marbles now?",
+    "answer": 12,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "7 + 9 - 4"
+  },
+  {
+    "id": "MS69",
+    "difficulty": "medium",
+    "text": "Gabriel made 11 drawings, lost 4, then made 5 more. How many drawings now?",
+    "answer": 12,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "11 + 4 - 5"
+  },
+  {
+    "id": "MS70",
+    "difficulty": "medium",
+    "text": "Ariana baked 9 muffins, ate 2, then baked 6 more. How many muffins now?",
+    "answer": 13,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "9 + 2 - 6"
+  },
+  {
+    "id": "MS76",
+    "difficulty": "medium",
+    "text": "Paisley saved 14 stickers, used 6, then earned 5 more. How many stickers now?",
+    "answer": 13,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "14 + 6 - 5"
+  },
+  {
+    "id": "MS77",
+    "difficulty": "medium",
+    "text": "Eliana collected 10 rocks, lost 4, then found 7 more. How many rocks?",
+    "answer": 13,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "10 + 4 - 7"
+  },
+  {
+    "id": "MS78",
+    "difficulty": "medium",
+    "text": "Ezra wrote 12 sentences, erased 5, then wrote 4 more. How many sentences now?",
+    "answer": 11,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "12 + 5 - 4"
+  },
+  {
+    "id": "MS79",
+    "difficulty": "medium",
+    "text": "Naomi had 9 crayons, lost 3, then found 5. How many crayons now?",
+    "answer": 11,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "9 - 3 - 5"
+  },
+  {
+    "id": "MS80",
+    "difficulty": "medium",
+    "text": "Thomas saw 13 birds, 5 flew away, then 4 more arrived. How many birds now?",
+    "answer": 12,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "13 + 5 - 4"
+  },
+  {
+    "id": "MS81",
+    "difficulty": "medium",
+    "text": "Ruby collected 8 shells, dropped 2, then found 6 more. How many shells now?",
+    "answer": 12,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "8 + 2 - 6"
+  },
+  {
+    "id": "MS82",
+    "difficulty": "medium",
+    "text": "Asher built 11 towers, 4 fell down, then he built 3 more. How many towers now?",
+    "answer": 10,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "11 + 4 - 3"
+  },
+  {
+    "id": "MS83",
+    "difficulty": "medium",
+    "text": "Bella made 7 bracelets, gave away 3, then made 5 more. How many bracelets now?",
+    "answer": 9,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "7 + 3 - 5"
+  },
+  {
+    "id": "MS84",
+    "difficulty": "medium",
+    "text": "Xavier had 15 marbles, gave 6 away, then found 4 more. How many marbles now?",
+    "answer": 13,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "15 + 6 - 4"
+  },
+  {
+    "id": "MS85",
+    "difficulty": "medium",
+    "text": "Leah saw 10 butterflies, 3 flew away, then 7 more arrived. How many butterflies now?",
+    "answer": 14,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "10 + 3 - 7"
+  },
+  {
+    "id": "MS86",
+    "difficulty": "medium",
+    "text": "Evan colored 9 pictures, erased 4, then colored 5 more. How many pictures now?",
+    "answer": 10,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "9 + 4 - 5"
+  },
+  {
+    "id": "MS87",
+    "difficulty": "medium",
+    "text": "Elise picked 14 flowers, gave 5 to her friend, then picked 3 more. How many flowers now?",
+    "answer": 12,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "14 + 5 - 3"
+  },
+  {
+    "id": "MS88",
+    "difficulty": "medium",
+    "text": "Connor had 16 toy cars, lost 7, then got 4 more. How many cars now?",
+    "answer": 13,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "16 + 7 + 4"
+  },
+  {
+    "id": "MS89",
+    "difficulty": "medium",
+    "text": "Sadie found 12 crayons, gave 4 away, then found 6 more. How many crayons now?",
+    "answer": 14,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "12 + 4 - 6"
+  },
+  {
+    "id": "MS90",
+    "difficulty": "medium",
+    "text": "Isaiah built 10 block towers, knocked down 4, then built 4 more. How many towers now?",
+    "answer": 10,
+    "operation": [
+      "a"
+    ],
+    "solution": "10 + 4 - 4"
+  },
+  {
+    "id": "MS91",
+    "difficulty": "medium",
+    "text": "Caroline ate 3 candies from her bag of 11, then got 4 more candies. How many candies now?",
+    "answer": 12,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "3 + 11 + 4"
+  },
+  {
+    "id": "MS92",
+    "difficulty": "medium",
+    "text": "Adam read 7 chapters, then 6 more, then reread 2. How many chapters read?",
+    "answer": 15,
+    "operation": [
+      "a"
+    ],
+    "solution": "7 + 6 - 2"
+  },
+  {
+    "id": "MS93",
+    "difficulty": "medium",
+    "text": "Aaliyah painted 9 hearts, erased 3, then painted 7 new ones. How many hearts now?",
+    "answer": 13,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "9 - 3 - 7"
+  },
+  {
+    "id": "MS94",
+    "difficulty": "medium",
+    "text": "Christian picked 8 apples, used 3 for pie, then picked 5 more. How many apples now?",
+    "answer": 10,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "8 + 3 - 5"
+  },
+  {
+    "id": "MS95",
+    "difficulty": "medium",
+    "text": "Autumn gathered 13 leaves, dropped 5, then gathered 4 more. How many leaves now?",
+    "answer": 12,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "13 + 5 - 4"
+  },
+  {
+    "id": "MS96",
+    "difficulty": "medium",
+    "text": "Ezekiel counted 10 frogs, 4 hopped away, then 6 hopped in. How many frogs now?",
+    "answer": 12,
+    "operation": [
+      "s"
+    ],
+    "solution": "10 - 4 - 6"
+  },
+  {
+    "id": "MS97",
+    "difficulty": "medium",
+    "text": "Alice drew 11 stars, erased 6, then drew 8 more. How many stars now?",
+    "answer": 13,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "11 + 6 - 8"
+  },
+  {
+    "id": "MS98",
+    "difficulty": "medium",
+    "text": "Ian read 10 pages, then 9 more, and reread 3. How many total pages read?",
+    "answer": 22,
+    "operation": [
+      "a"
+    ],
+    "solution": "10 + 9 - 3"
+  },
+  {
+    "id": "MS99",
+    "difficulty": "medium",
+    "text": "Ariella found 7 shells, lost 2, then found 6 more. How many shells now?",
+    "answer": 11,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "7 + 2 - 6"
+  },
+  {
+    "id": "MS100",
+    "difficulty": "medium",
+    "text": "Roman gathered 9 sticks, dropped 3, then found 5 more. How many sticks now?",
+    "answer": 11,
+    "operation": [
+      "a",
+      "s"
+    ],
+    "solution": "9 + 3 - 5"
+  }
+]
