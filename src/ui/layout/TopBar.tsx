@@ -211,7 +211,7 @@ export function TopBar({
                 dispatch({ type: 'SET_MODE', payload: 'FreePractice' });
                 setSessionMenuOpen(false);
               }}
-              label="Free Mode"
+              label="Practice Mode"
               accent={theme.colors.accent}
             />
             <ToggleButton
@@ -225,7 +225,7 @@ export function TopBar({
                   setSessionMenuOpen((o) => !o);
                 }
               }}
-              label="Session Mode"
+              label="Test Mode"
               accent={theme.colors.accent}
             />
 
@@ -286,7 +286,7 @@ export function TopBar({
             }}
           >
             <label className="text-xs font-medium text-gray-500">
-              Session size
+              Test size
             </label>
             <select
               value={config.sessionSize}

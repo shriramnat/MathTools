@@ -17,6 +17,7 @@ import { SessionResultOverlay } from '../ui/shared/SessionResultOverlay';
 export function App() {
   const [state, dispatch] = useReducer(appReducer, DEFAULT_APP_STATE);
   const [showFinishConfirm, setShowFinishConfirm] = useState(false);
+  const [showEndNoChecksConfirm, setShowEndNoChecksConfirm] = useState(false);
   const [sessionResult, setSessionResult] = useState<{
     type: 'celebration' | 'feedback';
     correct: number;
@@ -103,9 +104,9 @@ export function App() {
       (r) => r === 'Correct' || r === 'Incorrect',
     ).length;
 
-    // No problems were checked by parent — end session gracefully
+    // No problems were checked — ask for confirmation before ending
     if (totalChecked === 0) {
-      dispatch({ type: 'END_SESSION' });
+      setShowEndNoChecksConfirm(true);
       return;
     }
 
@@ -127,6 +128,17 @@ export function App() {
         total: totalProblems,
       });
     }
+  }, []);
+
+  // User confirms ending session without any checked answers
+  const handleConfirmEndNoChecks = useCallback(() => {
+    setShowEndNoChecksConfirm(false);
+    dispatch({ type: 'END_SESSION' });
+  }, []);
+
+  // User cancels — go back so they can verify answers
+  const handleCancelEndNoChecks = useCallback(() => {
+    setShowEndNoChecksConfirm(false);
   }, []);
 
   // Called when the session result overlay is dismissed
@@ -183,9 +195,19 @@ export function App() {
         </main>
 
         <ConfirmDialog
+          open={showEndNoChecksConfirm}
+          title="No answers checked!"
+          message="You haven't checked any of your answers yet. Are you sure you want to end the session?"
+          confirmLabel="Yes, end session"
+          cancelLabel="Go back & check"
+          onConfirm={handleConfirmEndNoChecks}
+          onCancel={handleCancelEndNoChecks}
+        />
+
+        <ConfirmDialog
           open={showFinishConfirm}
           title="Finished Problems?"
-          message="Are you sure you're done with all the problems? The timer will stop."
+          message="Are you sure you're done with all the problems? The timer will stop and your parents/proctors can verify your answers before you end the test."
           confirmLabel="Yes, I'm done!"
           cancelLabel="Keep working"
           onConfirm={handleConfirmFinish}

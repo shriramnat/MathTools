@@ -32,7 +32,7 @@ export type CheckMode = 'Manual' | 'Off';
 
 export const CheckModeSchema = z.enum(['Manual', 'Off']);
 
-// ── Session Size ─────────────────────────────────────────────────────
+// ── test Size ─────────────────────────────────────────────────────
 export type SessionSize = 10 | 15 | 20;
 
 export const SessionSizeSchema = z.union([

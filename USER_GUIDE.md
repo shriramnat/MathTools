@@ -93,13 +93,13 @@ Use this mode for casual, pressure-free practice.
 
 A structured practice mode for focused work.
 
-1. **Select session size** — choose 10, 15, or 20 problems from the dropdown
+1. **Select test size** — choose 10, 15, or 20 problems from the dropdown
 2. **Tap ▶ Start** — the session begins and a timer starts counting
 3. **Solve the problems** — work through the fixed set of problems
 4. **Tap ✓ Finished Problems** — a confirmation dialog appears asking if you're done
 5. **Confirm** — the timer stops and the session enters checking mode
 6. **Check answers** — use the check panel on each card (see [Checking Answers](#checking-answers))
-7. **Tap ■ End Session** — finishes the session and returns to free practice
+7. **Tap ■ End Test** — finishes the session and returns to free practice
 
 **During a session:**
 - The timer displays elapsed time

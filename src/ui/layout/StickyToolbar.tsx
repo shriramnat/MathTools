@@ -186,7 +186,7 @@ export function StickyToolbar({
                   onClick={onEndSession}
                   className="text-sm font-bold px-4 py-2 rounded-lg text-white transition-colors bg-red-500 hover:bg-red-600 min-h-[40px]"
                 >
-                  ■ End Session
+                  ■ End Test
                 </button>
               )}
             </div>

@@ -92,7 +92,7 @@ export const ProblemCard = React.memo(function ProblemCard({
                 color: theme.colors.accent,
               }}
             >
-              👨‍👩‍👧 Parent Check
+              🧐 Verify your answers
             </button>
           ) : (
             <div className="space-y-2">
