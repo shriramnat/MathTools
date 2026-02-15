@@ -71,16 +71,21 @@ export function TopBar({
     });
   }, [sessionMenuOpen]);
 
+  // Check if session exists (both 'active' and 'completed' states should disable controls)
+  const isSessionActive = session !== null;
+
   // Operation toggles
   const toggleOp = useCallback(
     (op: 'addition' | 'subtraction' | 'multiplication') => {
+      // Disable during active session
+      if (isSessionActive) return;
       const current = config.operations[op];
       // Prevent disabling all operations
       const enabledCount = Object.values(config.operations).filter(Boolean).length;
       if (current && enabledCount <= 1) return;
       dispatch({ type: 'SET_OPERATIONS', payload: { [op]: !current } });
     },
-    [config.operations, dispatch],
+    [config.operations, dispatch, isSessionActive],
   );
 
   const bar = (
@@ -143,18 +148,21 @@ export function TopBar({
               onClick={() => toggleOp('addition')}
               label="+"
               accent={theme.colors.accent}
+              disabled={isSessionActive}
             />
             <ToggleButton
               active={config.operations.subtraction}
               onClick={() => toggleOp('subtraction')}
               label="−"
               accent={theme.colors.accent}
+              disabled={isSessionActive}
             />
             <ToggleButton
               active={config.operations.multiplication}
               onClick={() => toggleOp('multiplication')}
               label="×"
               accent={theme.colors.accent}
+              disabled={isSessionActive}
             />
           </div>
 
@@ -162,7 +170,7 @@ export function TopBar({
           <div className="hidden sm:block w-px h-6 bg-gray-200" />
 
           {/* Max Digits Slider */}
-          <div className="flex items-center gap-2">
+          <div className={`flex items-center gap-2 ${isSessionActive ? 'opacity-50 pointer-events-none' : ''}`}>
             <label className="text-xs font-medium text-gray-500">Digits</label>
             <input
               type="range"
@@ -175,6 +183,7 @@ export function TopBar({
                   payload: Number(e.target.value) as MaxDigits,
                 })
               }
+              disabled={isSessionActive}
               className="w-20 h-2 accent-current"
               style={{ accentColor: theme.colors.accent }}
             />
@@ -198,6 +207,7 @@ export function TopBar({
                 onClick={() => dispatch({ type: 'SET_DIFFICULTY', payload: d })}
                 label={d}
                 accent={theme.colors.accent}
+                disabled={isSessionActive}
               />
             ))}
           </div>
@@ -337,16 +347,22 @@ const ToggleButton = React.forwardRef<
     onClick: () => void;
     label: string;
     accent: string;
+    disabled?: boolean;
   }
->(({ active, onClick, label, accent }, ref) => (
+>(({ active, onClick, label, accent, disabled = false }, ref) => (
   <button
     ref={ref}
     onClick={onClick}
+    disabled={disabled}
     className={`text-sm font-bold px-3 py-2 rounded-lg transition-colors min-w-[40px] min-h-[36px] ${
-      active ? 'text-white' : 'text-gray-500 bg-gray-100 hover:bg-gray-200'
+      disabled
+        ? 'opacity-50 cursor-not-allowed'
+        : active
+        ? 'text-white'
+        : 'text-gray-500 bg-gray-100 hover:bg-gray-200'
     }`}
     style={{
-      backgroundColor: active ? accent : undefined,
+      backgroundColor: active && !disabled ? accent : undefined,
     }}
   >
     {label}
