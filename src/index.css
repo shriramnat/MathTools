@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Increase base font size by 4pt (~5.33px) */
+html {
+  font-size: calc(16px + 4pt);
+}
+
+/* Prevent horizontal overflow on mobile */
+html,
+body {
+  overflow-x: hidden;
+}
