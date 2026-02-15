@@ -4,8 +4,8 @@ Hosted at https://shriramnat.github.io/MathTools/
 A touch-first math practice app for children aged 5–10. Children solve arithmetic problems by writing directly on the screen, while parents control the practice configuration from a top bar.
 
 ![React](https://img.shields.io/badge/React-18-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue) ![Vite](https://img.shields.io/badge/Vite-5-purple) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-cyan)
-<img width="3270" height="1872" alt="image" src="https://github.com/user-attachments/assets/15ecba99-8eed-4ccc-a0b9-ea44b20c16be" />
 
+![MathCanvas Screenshot](Screenshot%202026-02-15%20003722.png)
 
 ## Features
 
