@@ -11,7 +11,9 @@ interface ProblemCardProps {
   toolSize: number;
   toolMode: 'pen' | 'eraser';
   checkMode: 'Manual' | 'Off';
+  sessionStatus?: 'active' | 'completed' | null;
   onCheck?: (problemId: string, result: CheckResult) => void;
+  clearInkVersion?: number;
 }
 
 export const ProblemCard = React.memo(function ProblemCard({
@@ -21,7 +23,9 @@ export const ProblemCard = React.memo(function ProblemCard({
   toolSize,
   toolMode,
   checkMode,
+  sessionStatus,
   onCheck,
+  clearInkVersion,
 }: ProblemCardProps) {
   const theme = useTheme();
   const [showAnswer, setShowAnswer] = useState(false);
@@ -72,11 +76,12 @@ export const ProblemCard = React.memo(function ProblemCard({
           toolMode={toolMode}
           showAnswer={showAnswer}
           checkResult={checkResult === 'Skipped' ? null : checkResult}
+          clearInkVersion={clearInkVersion}
         />
       </div>
 
-      {/* Check panel (Manual mode only) */}
-      {checkMode === 'Manual' && (
+      {/* Check panel (Manual mode only, hidden during active session) */}
+      {checkMode === 'Manual' && sessionStatus !== 'active' && (
         <div className="border-t px-3 py-2" style={{ borderColor: theme.colors.cardBorder }}>
           {!showCheckPanel ? (
             <button

@@ -201,8 +201,8 @@ function renderGuides(
 
   ctx.save();
 
-  // Faint digit column lines
-  ctx.strokeStyle = 'rgba(148, 163, 184, 0.3)'; // slate-400 with opacity
+  // Digit column lines (visible against white background)
+  ctx.strokeStyle = 'rgba(148, 163, 184, 0.55)'; // slate-400 with medium opacity
   ctx.lineWidth = 1;
   ctx.setLineDash([4, 4]);
 
@@ -214,9 +214,9 @@ function renderGuides(
     ctx.stroke();
   }
 
-  // Faint carry row (above first number for addition)
+  // Carry row (above first number for addition)
   if (problem.op === 'addition') {
-    ctx.strokeStyle = 'rgba(148, 163, 184, 0.2)';
+    ctx.strokeStyle = 'rgba(148, 163, 184, 0.45)';
     ctx.setLineDash([2, 4]);
     const carryY = aY - fontSize * 0.8;
     ctx.beginPath();
@@ -226,7 +226,7 @@ function renderGuides(
   }
 
   // Dotted answer baseline
-  ctx.strokeStyle = 'rgba(148, 163, 184, 0.3)';
+  ctx.strokeStyle = 'rgba(148, 163, 184, 0.55)';
   ctx.setLineDash([3, 5]);
   ctx.beginPath();
   ctx.moveTo(layout.separatorStartX, answerY + fontSize * 0.1);

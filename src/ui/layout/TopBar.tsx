@@ -1,4 +1,5 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import type {
   AppAction,
   ActiveSession,
@@ -13,9 +14,6 @@ import { Timer } from '../shared/Timer';
 
 interface TopBarProps {
   config: PracticeConfig;
-  toolColor: string;
-  toolSize: number;
-  toolMode: 'pen' | 'eraser';
   session: ActiveSession | null;
   dispatch: React.Dispatch<AppAction>;
   onStartSession: () => void;
@@ -23,25 +21,11 @@ interface TopBarProps {
   onEndSession: () => void;
 }
 
-const PEN_COLORS = [
-  '#000000', // Black
-  '#1e40af', // Blue
-  '#dc2626', // Red
-  '#16a34a', // Green
-  '#9333ea', // Purple
-  '#ea580c', // Orange
-  '#0d9488', // Teal
-  '#be185d', // Pink
-];
-
 const DIFFICULTIES: Difficulty[] = ['Easy', 'Medium', 'Hard'];
 const SESSION_SIZES: SessionSize[] = [10, 15, 20];
 
 export function TopBar({
   config,
-  toolColor,
-  toolSize,
-  toolMode,
   session,
   dispatch,
   onStartSession,
@@ -50,6 +34,45 @@ export function TopBar({
 }: TopBarProps) {
   const theme = useTheme();
   const [controlsOpen, setControlsOpen] = useState(false);
+  const [sessionMenuOpen, setSessionMenuOpen] = useState(false);
+  const sessionBtnRef = useRef<HTMLButtonElement>(null);
+  const sessionMenuRef = useRef<HTMLDivElement>(null);
+
+  // Close session popover on outside click
+  useEffect(() => {
+    if (!sessionMenuOpen) return;
+    function handleClick(e: MouseEvent) {
+      if (
+        sessionMenuRef.current &&
+        !sessionMenuRef.current.contains(e.target as Node) &&
+        sessionBtnRef.current &&
+        !sessionBtnRef.current.contains(e.target as Node)
+      ) {
+        setSessionMenuOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, [sessionMenuOpen]);
+
+  // Close session popover when a session starts
+  useEffect(() => {
+    if (session) setSessionMenuOpen(false);
+  }, [session]);
+
+  // Compute popover position relative to the session button
+  const [menuPos, setMenuPos] = useState<{ top: number; left: number } | null>(null);
+  useEffect(() => {
+    if (!sessionMenuOpen || !sessionBtnRef.current) {
+      setMenuPos(null);
+      return;
+    }
+    const rect = sessionBtnRef.current.getBoundingClientRect();
+    setMenuPos({
+      top: rect.bottom + 8, // 8px gap below button
+      left: rect.right,     // align right edge
+    });
+  }, [sessionMenuOpen]);
 
   // Operation toggles
   const toggleOp = useCallback(
@@ -63,9 +86,9 @@ export function TopBar({
     [config.operations, dispatch],
   );
 
-  return (
+  const bar = (
     <div
-      className="sticky top-0 z-50 border-b shadow-sm"
+      className="z-50 border-b shadow-sm"
       style={{
         backgroundColor: theme.colors.bgTopBar,
         borderColor: theme.colors.cardBorder,
@@ -186,78 +209,32 @@ export function TopBar({
           <div className="hidden sm:block w-px h-6 bg-gray-200" />
 
           {/* Mode */}
-          <div className="flex gap-1">
+          <div className="relative flex gap-1">
             <ToggleButton
               active={config.mode === 'FreePractice'}
-              onClick={() => dispatch({ type: 'SET_MODE', payload: 'FreePractice' })}
-              label="Free"
+              onClick={() => {
+                dispatch({ type: 'SET_MODE', payload: 'FreePractice' });
+                setSessionMenuOpen(false);
+              }}
+              label="Free Mode"
               accent={theme.colors.accent}
             />
             <ToggleButton
+              ref={sessionBtnRef}
               active={config.mode === 'Session'}
-              onClick={() => dispatch({ type: 'SET_MODE', payload: 'Session' })}
-              label="Session"
+              onClick={() => {
+                if (config.mode !== 'Session') {
+                  dispatch({ type: 'SET_MODE', payload: 'Session' });
+                  setSessionMenuOpen(true);
+                } else {
+                  setSessionMenuOpen((o) => !o);
+                }
+              }}
+              label="Session Mode"
               accent={theme.colors.accent}
             />
+
           </div>
-
-          {/* Session controls */}
-          {config.mode === 'Session' && (
-            <>
-              <select
-                value={config.sessionSize}
-                onChange={(e) =>
-                  dispatch({
-                    type: 'SET_SESSION_SIZE',
-                    payload: Number(e.target.value) as SessionSize,
-                  })
-                }
-                className="text-sm px-2 py-1.5 border rounded min-h-[36px]"
-                disabled={session !== null}
-              >
-                {SESSION_SIZES.map((s) => (
-                  <option key={s} value={s}>
-                    {s} problems
-                  </option>
-                ))}
-              </select>
-
-              {!session ? (
-                <button
-                  onClick={onStartSession}
-                  className="text-sm font-bold px-4 py-2 rounded-lg text-white transition-colors min-h-[36px]"
-                  style={{ backgroundColor: theme.colors.accent }}
-                >
-                  ▶ Start
-                </button>
-              ) : (
-                <>
-                  <Timer
-                    startedAt={session.startedAt}
-                    stoppedAt={session.completedAt}
-                    className="mx-1"
-                    style={{ color: theme.colors.accent }}
-                  />
-                  {session.status === 'active' ? (
-                    <button
-                      onClick={onFinishProblems}
-                      className="text-sm font-bold px-4 py-2 rounded-lg text-white transition-colors min-h-[36px]"
-                      style={{ backgroundColor: '#f59e0b' }}
-                    >
-                      ✓ Finished Problems
-                    </button>
-                  ) : (
-                    <button
-                      onClick={onEndSession}
-                      className="text-sm font-bold px-4 py-2 rounded-lg text-white transition-colors bg-red-500 hover:bg-red-600 min-h-[36px]"
-                    >
-                      ■ End Session
-                    </button>
-                  )}
-                </>
-              )}
-            </>
-          )}
 
           {/* Guided mode */}
           <label className="flex items-center gap-1.5 text-sm cursor-pointer sm:ml-auto min-h-[36px]">
@@ -294,110 +271,89 @@ export function TopBar({
         </div>
       </div>
 
-      {/* ====== ROW 3: Drawing tools — always visible ====== */}
-      <div
-        className="flex flex-wrap items-center gap-2 px-3 py-2 border-t sm:px-4 sm:gap-3"
-        style={{ borderColor: theme.colors.cardBorder }}
-      >
-        {/* Pen / Eraser */}
-        <div className="flex gap-1">
-          <button
-            onClick={() => dispatch({ type: 'SET_TOOL_MODE', payload: 'pen' })}
-            className={`text-sm px-3 py-2 rounded-lg font-medium transition-colors min-h-[40px] ${
-              toolMode === 'pen' ? 'text-white' : 'text-gray-600 bg-gray-100'
-            }`}
-            style={{
-              backgroundColor: toolMode === 'pen' ? theme.colors.accent : undefined,
-            }}
-          >
-            ✏️ Pen
-          </button>
-          <button
-            onClick={() => dispatch({ type: 'SET_TOOL_MODE', payload: 'eraser' })}
-            className={`text-sm px-3 py-2 rounded-lg font-medium transition-colors min-h-[40px] ${
-              toolMode === 'eraser' ? 'text-white bg-gray-600' : 'text-gray-600 bg-gray-100'
-            }`}
-          >
-            🧽 Eraser
-          </button>
-        </div>
-
-        {/* Separator */}
-        <div className="hidden sm:block w-px h-5 bg-gray-200" />
-
-        {/* Brush size */}
-        <div className="flex items-center gap-2 shrink-0">
-          <label className="text-xs text-gray-500">Size</label>
-          <input
-            type="range"
-            min={1}
-            max={12}
-            value={toolSize}
-            onChange={(e) =>
-              dispatch({ type: 'SET_TOOL_SIZE', payload: Number(e.target.value) })
-            }
-            className="w-20 sm:w-16 h-2"
-            style={{ accentColor: theme.colors.accent }}
-          />
-          <div
-            className="rounded-full shrink-0"
-            style={{
-              width: Math.max(toolSize, 4),
-              height: Math.max(toolSize, 4),
-              backgroundColor: toolMode === 'eraser' ? '#9ca3af' : toolColor,
-            }}
-          />
-        </div>
-
-        {/* Separator */}
-        <div className="hidden sm:block w-px h-5 bg-gray-200" />
-
-        {/* Color palette */}
-        <div className="flex flex-wrap gap-1.5">
-          {PEN_COLORS.map((color) => (
-            <button
-              key={color}
-              onClick={() => dispatch({ type: 'SET_TOOL_COLOR', payload: color })}
-              className={`w-8 h-8 sm:w-7 sm:h-7 rounded-full border-2 transition-transform ${
-                toolColor === color && toolMode === 'pen' ? 'scale-125' : ''
-              }`}
-              style={{
-                backgroundColor: color,
-                borderColor:
-                  toolColor === color && toolMode === 'pen' ? theme.colors.accent : 'transparent',
-              }}
-              title={color}
-            />
-          ))}
-        </div>
-      </div>
     </div>
   );
-}
 
-// Reusable toggle button component
-function ToggleButton({
-  active,
-  onClick,
-  label,
-  accent,
-}: {
-  active: boolean;
-  onClick: () => void;
-  label: string;
-  accent: string;
-}) {
+  /* ---------- Session popover (portal) ---------- */
+  const popover =
+    config.mode === 'Session' && sessionMenuOpen && !session && menuPos
+      ? createPortal(
+          <div
+            ref={sessionMenuRef}
+            className="fixed z-[9999] flex flex-col gap-3 p-4 rounded-xl shadow-lg border"
+            style={{
+              top: menuPos.top,
+              left: menuPos.left,
+              transform: 'translateX(-100%)', // right-align to the anchor
+              backgroundColor: theme.colors.bgTopBar,
+              borderColor: theme.colors.cardBorder,
+              minWidth: 200,
+            }}
+          >
+            <label className="text-xs font-medium text-gray-500">
+              Session size
+            </label>
+            <select
+              value={config.sessionSize}
+              onChange={(e) =>
+                dispatch({
+                  type: 'SET_SESSION_SIZE',
+                  payload: Number(e.target.value) as SessionSize,
+                })
+              }
+              className="text-sm px-2 py-1.5 border rounded min-h-[36px]"
+            >
+              {SESSION_SIZES.map((s) => (
+                <option key={s} value={s}>
+                  {s} problems
+                </option>
+              ))}
+            </select>
+
+            <button
+              onClick={() => {
+                setSessionMenuOpen(false);
+                onStartSession();
+              }}
+              className="text-sm font-bold px-4 py-2 rounded-lg text-white transition-colors min-h-[36px]"
+              style={{ backgroundColor: theme.colors.accent }}
+            >
+              ▶ Start
+            </button>
+          </div>,
+          document.body,
+        )
+      : null;
+
   return (
-    <button
-      onClick={onClick}
-      className={`text-sm font-bold px-3 py-2 rounded-lg transition-colors min-w-[40px] min-h-[36px] ${
-        active ? 'text-white' : 'text-gray-500 bg-gray-100 hover:bg-gray-200'
-      }`}
-      style={{
-        backgroundColor: active ? accent : undefined,
-      }}
-    >
-      {label}
-    </button>
+    <>
+      {bar}
+      {popover}
+    </>
   );
 }
+
+// Reusable toggle button component (supports ref forwarding)
+const ToggleButton = React.forwardRef<
+  HTMLButtonElement,
+  {
+    active: boolean;
+    onClick: () => void;
+    label: string;
+    accent: string;
+  }
+>(({ active, onClick, label, accent }, ref) => (
+  <button
+    ref={ref}
+    onClick={onClick}
+    className={`text-sm font-bold px-3 py-2 rounded-lg transition-colors min-w-[40px] min-h-[36px] ${
+      active ? 'text-white' : 'text-gray-500 bg-gray-100 hover:bg-gray-200'
+    }`}
+    style={{
+      backgroundColor: active ? accent : undefined,
+    }}
+  >
+    {label}
+  </button>
+));
+ToggleButton.displayName = 'ToggleButton';

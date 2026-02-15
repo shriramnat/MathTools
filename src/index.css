@@ -1,12 +1,11 @@
 @import "tailwindcss";
 
 /* Increase base font size by 4pt (~5.33px) */
+/* Use overflow-clip on html to avoid breaking position:sticky */
 html {
   font-size: calc(16px + 4pt);
+  overflow-x: clip;
 }
-
-/* Prevent horizontal overflow on mobile */
-html,
 body {
-  overflow-x: hidden;
+  overflow-x: clip;
 }

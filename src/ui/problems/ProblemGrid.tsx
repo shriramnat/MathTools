@@ -6,10 +6,12 @@ import { ProblemCard } from './ProblemCard';
 interface ProblemGridProps {
   config: PracticeConfig;
   sessionProblems?: Problem[];
+  sessionStatus?: 'active' | 'completed' | null;
   toolColor: string;
   toolSize: number;
   toolMode: 'pen' | 'eraser';
   onCheck?: (problemId: string, result: CheckResult) => void;
+  clearInkVersion?: number;
 }
 
 const BATCH_SIZE = 12;
@@ -17,10 +19,12 @@ const BATCH_SIZE = 12;
 export function ProblemGrid({
   config,
   sessionProblems,
+  sessionStatus,
   toolColor,
   toolSize,
   toolMode,
   onCheck,
+  clearInkVersion,
 }: ProblemGridProps) {
   const [seed] = useState(() => createSeed());
   const [problemCount, setProblemCount] = useState(BATCH_SIZE);
@@ -70,7 +74,9 @@ export function ProblemGrid({
           toolSize={toolSize}
           toolMode={toolMode}
           checkMode={config.checkMode}
+          sessionStatus={sessionStatus}
           onCheck={onCheck}
+          clearInkVersion={clearInkVersion}
         />
       ))}
     </div>

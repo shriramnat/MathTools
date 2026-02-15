@@ -13,6 +13,7 @@ interface ProblemCanvasProps {
   toolMode: 'pen' | 'eraser';
   showAnswer: boolean;
   checkResult?: 'Correct' | 'Incorrect' | null;
+  clearInkVersion?: number;
 }
 
 const CANVAS_WIDTH = 400;
@@ -26,6 +27,7 @@ export const ProblemCanvas = React.memo(function ProblemCanvas({
   toolMode,
   showAnswer,
   checkResult,
+  clearInkVersion,
 }: ProblemCanvasProps) {
   const templateCanvasRef = useRef<HTMLCanvasElement>(null);
   const inkCanvasRef = useRef<HTMLCanvasElement>(null);
@@ -96,6 +98,16 @@ export const ProblemCanvas = React.memo(function ProblemCanvas({
     strokesRef.current = [];
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
   }, []);
+
+  // Clear ink when clearInkVersion changes (from parent "clear all" or config change)
+  const clearInkVersionRef = useRef(clearInkVersion);
+  useEffect(() => {
+    // Skip the initial mount — only clear on subsequent changes
+    if (clearInkVersionRef.current !== clearInkVersion) {
+      clearInkVersionRef.current = clearInkVersion;
+      handleClear();
+    }
+  }, [clearInkVersion, handleClear]);
 
   // Handle undo
   const handleUndo = useCallback(() => {
