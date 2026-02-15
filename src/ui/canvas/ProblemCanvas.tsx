@@ -7,7 +7,6 @@ import { PointerController } from './pointerController';
 
 interface ProblemCanvasProps {
   problem: Problem;
-  maxDigits: number;
   guidedMode: boolean;
   toolColor: string;
   toolSize: number;
@@ -19,7 +18,6 @@ interface ProblemCanvasProps {
 
 export const ProblemCanvas = React.memo(function ProblemCanvas({
   problem,
-  maxDigits,
   guidedMode,
   toolColor,
   toolSize,
@@ -30,8 +28,8 @@ export const ProblemCanvas = React.memo(function ProblemCanvas({
 }: ProblemCanvasProps) {
   // Compute canvas dimensions based on maxDigits config (uniform for all problems)
   const { width: CANVAS_WIDTH, height: CANVAS_HEIGHT } = useMemo(
-    () => computeCanvasSize(maxDigits),
-    [maxDigits],
+    () => computeCanvasSize(),
+    [],
   );
 
   const templateCanvasRef = useRef<HTMLCanvasElement>(null);

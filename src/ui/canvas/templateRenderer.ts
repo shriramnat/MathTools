@@ -51,7 +51,7 @@ const FIXED_FONT_SIZE = 36;
  * regardless of actual digit count. For multiplication, results are constrained
  * to 7 digits maximum.
  */
-export function computeCanvasSize(maxDigits: number): { width: number; height: number } {
+export function computeCanvasSize(): { width: number; height: number } {
   // Always use 6 as the basis for canvas size to keep dimensions constant
   const maxNumberLen = 7; // Maximum answer length (7 digits for multiplication)
 

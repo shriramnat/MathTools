@@ -71,7 +71,6 @@ export function AnswerInput({ value, onChange, disabled }: AnswerInputProps) {
           className="w-full px-4 py-3 text-2xl font-bold text-center rounded-lg border-2 focus:outline-none focus:ring-2 disabled:opacity-50 disabled:cursor-not-allowed"
           style={{
             borderColor: theme.colors.cardBorder,
-            focusRingColor: theme.colors.accent,
           }}
         />
       </div>

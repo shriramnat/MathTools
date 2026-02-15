@@ -69,7 +69,6 @@ export function ProblemGrid({
         <ProblemCard
           key={problem.id}
           problem={problem}
-          maxDigits={config.maxDigits}
           guidedMode={config.guidedMode}
           toolColor={toolColor}
           toolSize={toolSize}
