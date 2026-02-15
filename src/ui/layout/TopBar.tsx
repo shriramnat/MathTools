@@ -10,15 +10,12 @@ import type {
 } from '../../app/store/types';
 import { useTheme } from '../../theme/themeProvider';
 import { THEMES } from '../../theme/themes';
-import { Timer } from '../shared/Timer';
 
 interface TopBarProps {
   config: PracticeConfig;
   session: ActiveSession | null;
   dispatch: React.Dispatch<AppAction>;
   onStartSession: () => void;
-  onFinishProblems: () => void;
-  onEndSession: () => void;
 }
 
 const DIFFICULTIES: Difficulty[] = ['Easy', 'Medium', 'Hard'];
@@ -29,8 +26,6 @@ export function TopBar({
   session,
   dispatch,
   onStartSession,
-  onFinishProblems,
-  onEndSession,
 }: TopBarProps) {
   const theme = useTheme();
   const [controlsOpen, setControlsOpen] = useState(false);

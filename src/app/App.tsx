@@ -156,8 +156,6 @@ export function App() {
           session={session}
           dispatch={dispatch}
           onStartSession={handleStartSession}
-          onFinishProblems={handleFinishProblems}
-          onEndSession={handleEndSession}
         />
 
         <StickyToolbar
