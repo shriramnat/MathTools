@@ -37,11 +37,48 @@ export interface TemplateLayout {
 
 const FONT_FAMILY = '"Courier New", Courier, monospace';
 const DIGIT_SPACING_FACTOR = 2.0; // Spacing between digits
-const PADDING_FACTOR = 0.15; // Padding as fraction of canvas size
 const SEPARATOR_EXTENSION = 4; // Extra chars on each side
+
+/** Fixed font size used for all problems regardless of digit count */
+const FIXED_FONT_SIZE = 36;
+
+/**
+ * Compute the ideal canvas dimensions based on the maxDigits config setting,
+ * so all problems rendered at the same difficulty share uniform canvas sizes
+ * and identical font sizes.
+ *
+ * Canvas size is fixed based on maxDigits=6 to ensure consistent visual sizing
+ * regardless of actual digit count. For multiplication, results are constrained
+ * to 7 digits maximum.
+ */
+export function computeCanvasSize(maxDigits: number): { width: number; height: number } {
+  // Always use 6 as the basis for canvas size to keep dimensions constant
+  const maxNumberLen = 7; // Maximum answer length (7 digits for multiplication)
+
+  const charWidth = FIXED_FONT_SIZE * 0.6;
+  const lineHeight = FIXED_FONT_SIZE * 1.5;
+  const digitSpacing = charWidth * DIGIT_SPACING_FACTOR;
+
+  // Width: operator (2 chars) + digits with spacing + separator extension + padding
+  const numberBlockWidth = maxNumberLen * digitSpacing;
+  const operatorWidth = 2 * charWidth;
+  const totalBlockWidth = operatorWidth + numberBlockWidth;
+  const extension = SEPARATOR_EXTENSION * charWidth * 0.5;
+  const contentWidth = totalBlockWidth + 2 * extension;
+  const paddingX = 40; // fixed padding
+  const width = Math.max(Math.ceil(contentWidth + 2 * paddingX), 300);
+
+  // Height: 4 content rows (a, b, separator, answer) + carry space + padding
+  const contentHeight = FIXED_FONT_SIZE + lineHeight * 3.6;
+  const paddingY = 50; // fixed padding
+  const height = Math.max(Math.ceil(contentHeight + 2 * paddingY), 250);
+
+  return { width, height };
+}
 
 /**
  * Compute the layout for rendering a problem template.
+ * Uses a fixed font size so text is consistent across all digit counts.
  */
 export function computeLayout(
   problem: Problem,
@@ -56,20 +93,7 @@ export function computeLayout(
   // Max width in characters (including operator column)
   const maxNumberLen = Math.max(aStr.length, bStr.length, answerStr.length);
 
-  // Calculate font size to fit the canvas
-  const paddingX = canvasWidth * PADDING_FACTOR;
-  const paddingY = canvasHeight * PADDING_FACTOR;
-  const availableWidth = canvasWidth - 2 * paddingX;
-  const availableHeight = canvasHeight - 2 * paddingY;
-
-  // We need space for: operator(2 chars) + digits with spacing
-  const totalCharsWidth = 2 + maxNumberLen * DIGIT_SPACING_FACTOR;
-  const fontSizeByWidth = availableWidth / totalCharsWidth;
-
-  // We need 4 rows: a, b, separator, answer area
-  const fontSizeByHeight = availableHeight / 5;
-
-  const fontSize = Math.floor(Math.min(fontSizeByWidth, fontSizeByHeight, 48));
+  const fontSize = FIXED_FONT_SIZE;
   const charWidth = fontSize * 0.6; // Monospace approximation
   const lineHeight = fontSize * 1.5;
   const digitSpacing = charWidth * DIGIT_SPACING_FACTOR;
@@ -84,8 +108,9 @@ export function computeLayout(
   const operatorX = blockStartX;
   const numberRightX = blockStartX + totalBlockWidth;
 
-  // Vertical layout
-  const startY = paddingY + fontSize;
+  // Vertical layout — center vertically
+  const contentHeight = fontSize + lineHeight * 3.6;
+  const startY = (canvasHeight - contentHeight) / 2 + fontSize;
   const aY = startY;
   const bY = startY + lineHeight;
   const separatorY = bY + lineHeight * 0.6;

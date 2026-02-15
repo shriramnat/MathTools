@@ -81,6 +81,7 @@ export function appReducer(state: AppState, action: AppAction): AppState {
       return {
         ...state,
         session: null,
+        config: { ...state.config, mode: 'FreePractice' },
       };
 
     case 'CHECK_PROBLEM':

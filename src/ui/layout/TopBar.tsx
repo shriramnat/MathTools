@@ -6,7 +6,6 @@ import type {
   Difficulty,
   MaxDigits,
   PracticeConfig,
-  SessionSize,
 } from '../../app/store/types';
 import { useTheme } from '../../theme/themeProvider';
 import { THEMES } from '../../theme/themes';
@@ -19,7 +18,6 @@ interface TopBarProps {
 }
 
 const DIFFICULTIES: Difficulty[] = ['Easy', 'Medium', 'Hard'];
-const SESSION_SIZES: SessionSize[] = [10, 15, 20];
 
 export function TopBar({
   config,
@@ -33,7 +31,7 @@ export function TopBar({
   const sessionBtnRef = useRef<HTMLButtonElement>(null);
   const sessionMenuRef = useRef<HTMLDivElement>(null);
 
-  // Close session popover on outside click
+  // Close session popover on outside click and revert to practice mode
   useEffect(() => {
     if (!sessionMenuOpen) return;
     function handleClick(e: MouseEvent) {
@@ -44,11 +42,15 @@ export function TopBar({
         !sessionBtnRef.current.contains(e.target as Node)
       ) {
         setSessionMenuOpen(false);
+        // If no active session, revert to practice mode when clicking away
+        if (!session) {
+          dispatch({ type: 'SET_MODE', payload: 'FreePractice' });
+        }
       }
     }
     document.addEventListener('mousedown', handleClick);
     return () => document.removeEventListener('mousedown', handleClick);
-  }, [sessionMenuOpen]);
+  }, [sessionMenuOpen, session, dispatch]);
 
   // Close session popover when a session starts
   useEffect(() => {
@@ -203,32 +205,28 @@ export function TopBar({
           {/* Separator — hidden on mobile */}
           <div className="hidden sm:block w-px h-6 bg-gray-200" />
 
-          {/* Mode */}
+          {/* Test Mode toggle */}
           <div className="relative flex gap-1">
-            <ToggleButton
-              active={config.mode === 'FreePractice'}
-              onClick={() => {
-                dispatch({ type: 'SET_MODE', payload: 'FreePractice' });
-                setSessionMenuOpen(false);
-              }}
-              label="Practice Mode"
-              accent={theme.colors.accent}
-            />
             <ToggleButton
               ref={sessionBtnRef}
               active={config.mode === 'Session'}
               onClick={() => {
                 if (config.mode !== 'Session') {
+                  // Activate test mode and show popover
                   dispatch({ type: 'SET_MODE', payload: 'Session' });
                   setSessionMenuOpen(true);
+                } else if (session) {
+                  // During an active session, just toggle popover visibility
+                  // (don't allow deactivating test mode mid-session)
                 } else {
-                  setSessionMenuOpen((o) => !o);
+                  // Deactivate test mode — go back to practice
+                  dispatch({ type: 'SET_MODE', payload: 'FreePractice' });
+                  setSessionMenuOpen(false);
                 }
               }}
-              label="Test Mode"
+              label="📝 Test Mode"
               accent={theme.colors.accent}
             />
-
           </div>
 
           {/* Guided mode */}
@@ -282,28 +280,31 @@ export function TopBar({
               transform: 'translateX(-100%)', // right-align to the anchor
               backgroundColor: theme.colors.bgTopBar,
               borderColor: theme.colors.cardBorder,
-              minWidth: 200,
+              width: 260,
             }}
           >
             <label className="text-xs font-medium text-gray-500">
-              Test size
+              Number of questions: <span className="font-bold" style={{ color: theme.colors.accent }}>{config.sessionSize}</span>
             </label>
-            <select
+            <input
+              type="range"
+              min={5}
+              max={100}
+              step={5}
               value={config.sessionSize}
               onChange={(e) =>
                 dispatch({
                   type: 'SET_SESSION_SIZE',
-                  payload: Number(e.target.value) as SessionSize,
+                  payload: Number(e.target.value),
                 })
               }
-              className="text-sm px-2 py-1.5 border rounded min-h-[36px]"
-            >
-              {SESSION_SIZES.map((s) => (
-                <option key={s} value={s}>
-                  {s} problems
-                </option>
-              ))}
-            </select>
+              className="w-full h-2 accent-current"
+              style={{ accentColor: theme.colors.accent }}
+            />
+            <div className="flex justify-between text-[10px] text-gray-400">
+              <span>5</span>
+              <span>100</span>
+            </div>
 
             <button
               onClick={() => {

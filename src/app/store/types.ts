@@ -33,13 +33,9 @@ export type CheckMode = 'Manual' | 'Off';
 export const CheckModeSchema = z.enum(['Manual', 'Off']);
 
 // ── test Size ─────────────────────────────────────────────────────
-export type SessionSize = 10 | 15 | 20;
+export type SessionSize = number;
 
-export const SessionSizeSchema = z.union([
-  z.literal(10),
-  z.literal(15),
-  z.literal(20),
-]);
+export const SessionSizeSchema = z.number().int().min(5).max(100);
 
 // ── Practice Configuration ───────────────────────────────────────────
 export interface PracticeConfig {
@@ -167,7 +163,7 @@ export const DEFAULT_CONFIG: PracticeConfig = {
   difficulty: 'Easy',
   mode: 'FreePractice',
   sessionSize: 10,
-  guidedMode: false,
+  guidedMode: true,
   checkMode: 'Manual',
   themeId: 'default',
 };

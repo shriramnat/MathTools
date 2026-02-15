@@ -6,6 +6,7 @@ import {
   getMultiplicationBDigitsCap,
   hasCarry,
   hasBorrow,
+  countDigits,
 } from './problemTypes';
 
 export interface GeneratedOperands {
@@ -50,6 +51,7 @@ function chooseDigitCounts(
  * - Subtraction: a >= b (never negative)
  * - Easy addition: prefer no carry
  * - Easy subtraction: prefer no borrow
+ * - Multiplication: result must not exceed 7 digits
  */
 export function generateOperands(
   rng: SeededRng,
@@ -62,6 +64,26 @@ export function generateOperands(
 
   const aRange = digitRange(aDigits);
   const bRange = digitRange(bDigits);
+
+  // For multiplication, ensure result doesn't exceed 7 digits
+  if (op === 'multiplication') {
+    for (let attempt = 0; attempt < maxAttempts; attempt++) {
+      const a = rng.nextInt(aRange.min, aRange.max);
+      const b = rng.nextInt(bRange.min, bRange.max);
+      const result = a * b;
+      
+      if (countDigits(result) <= 7) {
+        return { op, a, b, aDigits, bDigits };
+      }
+    }
+    // Fallback: reduce b until result fits
+    const a = rng.nextInt(aRange.min, aRange.max);
+    let b = rng.nextInt(bRange.min, bRange.max);
+    while (countDigits(a * b) > 7 && b > 1) {
+      b = Math.floor(b / 2);
+    }
+    return { op, a, b, aDigits, bDigits };
+  }
 
   // For Easy mode, try to avoid carry/borrow
   if (difficulty === 'Easy' && (op === 'addition' || op === 'subtraction')) {

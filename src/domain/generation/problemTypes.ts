@@ -51,7 +51,10 @@ export function getEnabledOperations(operations: {
   return enabled;
 }
 
-/** Get max bDigits for multiplication based on difficulty */
+/** 
+ * Get max bDigits for multiplication based on difficulty.
+ * Note: The actual problem generation ensures results don't exceed 7 digits.
+ */
 export function getMultiplicationBDigitsCap(
   difficulty: Difficulty,
   maxDigits: MaxDigits,

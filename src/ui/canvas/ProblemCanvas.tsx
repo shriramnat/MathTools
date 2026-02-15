@@ -1,12 +1,13 @@
-import React, { useRef, useEffect, useCallback } from 'react';
+import React, { useRef, useEffect, useCallback, useMemo } from 'react';
 import type { Problem } from '../../app/store/types';
 import type { Stroke } from './strokeModel';
-import { computeLayout, renderTemplate, renderAnswer } from './templateRenderer';
+import { computeCanvasSize, computeLayout, renderTemplate, renderAnswer } from './templateRenderer';
 import { redrawAllStrokes } from './inkRenderer';
 import { PointerController } from './pointerController';
 
 interface ProblemCanvasProps {
   problem: Problem;
+  maxDigits: number;
   guidedMode: boolean;
   toolColor: string;
   toolSize: number;
@@ -16,11 +17,9 @@ interface ProblemCanvasProps {
   clearInkVersion?: number;
 }
 
-const CANVAS_WIDTH = 400;
-const CANVAS_HEIGHT = 300;
-
 export const ProblemCanvas = React.memo(function ProblemCanvas({
   problem,
+  maxDigits,
   guidedMode,
   toolColor,
   toolSize,
@@ -29,6 +28,12 @@ export const ProblemCanvas = React.memo(function ProblemCanvas({
   checkResult,
   clearInkVersion,
 }: ProblemCanvasProps) {
+  // Compute canvas dimensions based on maxDigits config (uniform for all problems)
+  const { width: CANVAS_WIDTH, height: CANVAS_HEIGHT } = useMemo(
+    () => computeCanvasSize(maxDigits),
+    [maxDigits],
+  );
+
   const templateCanvasRef = useRef<HTMLCanvasElement>(null);
   const inkCanvasRef = useRef<HTMLCanvasElement>(null);
   const controllerRef = useRef<PointerController | null>(null);
@@ -57,7 +62,7 @@ export const ProblemCanvas = React.memo(function ProblemCanvas({
     if (showAnswer) {
       renderAnswer(ctx, problem, layout);
     }
-  }, [problem, guidedMode, showAnswer]);
+  }, [problem, guidedMode, showAnswer, CANVAS_WIDTH, CANVAS_HEIGHT]);
 
   // Redraw template when problem or settings change
   useEffect(() => {
@@ -97,7 +102,7 @@ export const ProblemCanvas = React.memo(function ProblemCanvas({
 
     strokesRef.current = [];
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-  }, []);
+  }, [CANVAS_WIDTH, CANVAS_HEIGHT]);
 
   // Clear ink when clearInkVersion changes (from parent "clear all" or config change)
   const clearInkVersionRef = useRef(clearInkVersion);
@@ -119,7 +124,7 @@ export const ProblemCanvas = React.memo(function ProblemCanvas({
 
     strokesRef.current = strokesRef.current.slice(0, -1);
     redrawAllStrokes(ctx, strokesRef.current, CANVAS_WIDTH, CANVAS_HEIGHT);
-  }, []);
+  }, [CANVAS_WIDTH, CANVAS_HEIGHT]);
 
   // Check result badge
   const badgeColor =

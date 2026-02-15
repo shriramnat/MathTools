@@ -6,6 +6,7 @@ import { useTheme } from '../../theme/themeProvider';
 
 interface ProblemCardProps {
   problem: Problem;
+  maxDigits: number;
   guidedMode: boolean;
   toolColor: string;
   toolSize: number;
@@ -18,6 +19,7 @@ interface ProblemCardProps {
 
 export const ProblemCard = React.memo(function ProblemCard({
   problem,
+  maxDigits,
   guidedMode,
   toolColor,
   toolSize,
@@ -70,6 +72,7 @@ export const ProblemCard = React.memo(function ProblemCard({
       <div className="p-2">
         <ProblemCanvas
           problem={problem}
+          maxDigits={maxDigits}
           guidedMode={guidedMode}
           toolColor={toolColor}
           toolSize={toolSize}
