@@ -71,7 +71,7 @@ export const ProblemCard = React.memo(function ProblemCard({
           toolSize={toolSize}
           toolMode={toolMode}
           showAnswer={showAnswer}
-          checkResult={checkResult}
+          checkResult={checkResult === 'Skipped' ? null : checkResult}
         />
       </div>
 

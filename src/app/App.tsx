@@ -1,4 +1,4 @@
-import React, { useReducer, useCallback, useState } from 'react';
+import { useReducer, useCallback, useState } from 'react';
 import { appReducer } from './store/appReducer';
 import {
   DEFAULT_APP_STATE,

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { generateProblem, generateProblems, createSeed } from '../domain/generation/problemGenerator';
+import { generateProblem, generateProblems } from '../domain/generation/problemGenerator';
 import { hasCarry, hasBorrow, computeAnswer, digitRange, countDigits } from '../domain/generation/problemTypes';
 import { SeededRng } from '../domain/generation/rng';
 import type { PracticeConfig } from '../app/store/types';

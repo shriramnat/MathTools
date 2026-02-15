@@ -1,4 +1,4 @@
-import type { Stroke, StrokePoint } from './strokeModel';
+import type { Stroke } from './strokeModel';
 
 /**
  * Draw a single stroke segment (the most recent segment) for incremental rendering.

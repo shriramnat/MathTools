@@ -190,7 +190,7 @@ function renderGuides(
   problem: Problem,
   layout: TemplateLayout,
 ): void {
-  const { numberRightX, aY, separatorY, answerY, digitSpacing, fontSize, canvasHeight } = layout;
+  const { numberRightX, aY, answerY, digitSpacing, fontSize, canvasHeight } = layout;
 
   const answer = computeAnswer(problem.a, problem.b, problem.op);
   const maxLen = Math.max(

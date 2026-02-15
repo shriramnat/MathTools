@@ -1,4 +1,4 @@
-import React, { useMemo, useCallback, useState, useEffect } from 'react';
+import { useMemo, useCallback, useState, useEffect } from 'react';
 import type { Problem, PracticeConfig, CheckResult } from '../../app/store/types';
 import { generateProblems, createSeed } from '../../domain/generation/problemGenerator';
 import { ProblemCard } from './ProblemCard';

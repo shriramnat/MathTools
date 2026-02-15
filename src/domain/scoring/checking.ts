@@ -1,4 +1,4 @@
-import type { Problem, Operation } from '../../app/store/types';
+import type { Problem } from '../../app/store/types';
 import { computeAnswer } from '../generation/problemTypes';
 
 /**

@@ -1,7 +1,6 @@
-import React, { useRef, useEffect, useCallback, useState } from 'react';
+import React, { useRef, useEffect, useCallback } from 'react';
 import type { Problem } from '../../app/store/types';
 import type { Stroke } from './strokeModel';
-import { createEmptyInkState } from './strokeModel';
 import { computeLayout, renderTemplate, renderAnswer } from './templateRenderer';
 import { redrawAllStrokes } from './inkRenderer';
 import { PointerController } from './pointerController';

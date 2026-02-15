@@ -1,4 +1,4 @@
-import type { MaxDigits, Difficulty, ProgressStats } from '../../app/store/types';
+import type { MaxDigits, Difficulty } from '../../app/store/types';
 
 /**
  * Automatic progression engine.
