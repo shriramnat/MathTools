@@ -5,9 +5,10 @@
     "text": "A puppy has 22 bones. It buries 7 and then finds 4 more. How many bones does it have now?",
     "answer": 19,
     "operation": [
+      "s",
       "a"
     ],
-    "solution": "22 + 7 + 4"
+    "solution": "22 - 7 + 4"
   },
   {
     "id": "H2",
@@ -15,10 +16,10 @@
     "text": "A squirrel gathers 18 nuts, drops 5, and then collects 3 more. How many nuts does it end with?",
     "answer": 16,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "18 + 5 + 3"
+    "solution": "18 - 5 + 3"
   },
   {
     "id": "H3",
@@ -26,10 +27,10 @@
     "text": "A zoo has 25 birds. 9 fly away but 6 new birds arrive. How many birds now?",
     "answer": 22,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "25 - 9 - 6"
+    "solution": "25 - 9 + 6"
   },
   {
     "id": "H4",
@@ -37,10 +38,10 @@
     "text": "A rabbit finds 17 carrots, eats 6, and later finds 2 more. How many carrots remain?",
     "answer": 13,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "17 + 6 + 2"
+    "solution": "17 - 6 + 2"
   },
   {
     "id": "H5",
@@ -48,20 +49,21 @@
     "text": "A dog chases 14 balls in the yard, loses 5, then finds 4 under a bush. How many balls does it have?",
     "answer": 13,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "14 + 5 - 4"
+    "solution": "14 - 5 + 4"
   },
   {
     "id": "H6",
     "difficulty": "hard",
     "text": "An astronaut sees 20 stars, then counts 8 more, but 6 are hidden by clouds. How many stars can they still see?",
-    "answer": 22,
+    "answer": 6,
     "operation": [
-      "a"
+      "s",
+      "s"
     ],
-    "solution": "20 + 8 - 6"
+    "solution": "20 - 8 - 6"
   },
   {
     "id": "H7",
@@ -69,10 +71,10 @@
     "text": "A space rover collects 17 rocks, drops 8, and receives 5 more from another robot. How many rocks now?",
     "answer": 14,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "17 + 8 + 5"
+    "solution": "17 - 8 + 5"
   },
   {
     "id": "H8",
@@ -80,10 +82,10 @@
     "text": "A rocket has 24 buttons. Engineers remove 7 and add 3 new ones. How many buttons total?",
     "answer": 20,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "24 + 7 - 3"
+    "solution": "24 - 7 + 3"
   },
   {
     "id": "H9",
@@ -91,9 +93,10 @@
     "text": "A moon base has 26 robots. 12 go offline, but 6 are repaired. How many robots are online now?",
     "answer": 20,
     "operation": [
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "26 - 12 - 6"
+    "solution": "26 - 12 + 6"
   },
   {
     "id": "H10",
@@ -101,21 +104,21 @@
     "text": "A starship launches 15 probes, retrieves 4, then sends out 7 more. How many probes are currently out?",
     "answer": 18,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "15 + 4 - 7"
+    "solution": "15 - 4 + 7"
   },
   {
     "id": "H11",
     "difficulty": "hard",
     "text": "A soccer team scores 12 goals in practice, then scores 9 more, but 7 are disallowed. How many goals count?",
-    "answer": 14,
+    "answer": -4,
     "operation": [
-      "a",
+      "s",
       "s"
     ],
-    "solution": "12 + 9 - 7"
+    "solution": "12 - 9 - 7"
   },
   {
     "id": "H12",
@@ -123,10 +126,10 @@
     "text": "A basketball team has 23 balls. They lose 9 and buy 6 more. How many balls do they have now?",
     "answer": 20,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "23 + 9 - 6"
+    "solution": "23 - 9 + 6"
   },
   {
     "id": "H13",
@@ -134,10 +137,9 @@
     "text": "A baseball player hits 18 balls, misses 7, then hits 4 more. How many total hits did they make?",
     "answer": 22,
     "operation": [
-      "a",
-      "s"
+      "a"
     ],
-    "solution": "18 + 7 - 4"
+    "solution": "18 + 4"
   },
   {
     "id": "H14",
@@ -145,31 +147,29 @@
     "text": "There are 27 kids running a race. 11 drop out and 8 new kids join. How many runners now?",
     "answer": 24,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "27 - 11 - 8"
+    "solution": "27 - 11 + 8"
   },
   {
     "id": "H15",
     "difficulty": "hard",
     "text": "A swimmer completes 19 laps, rests, then swims 6 more. How many laps total?",
-    "answer": 25,
-    "operation": [
-      "a"
-    ],
-    "solution": "19 + 6"
+    "answer": 19,
+    "operation": [],
+    "solution": "19"
   },
   {
     "id": "H16",
     "difficulty": "hard",
     "text": "A child decorates 21 cookies, eats 5, then decorates 4 more. How many decorated cookies remain?",
-    "answer": 20,
+    "answer": 12,
     "operation": [
-      "a",
+      "s",
       "s"
     ],
-    "solution": "21 + 5 - 4"
+    "solution": "21 - 5 - 4"
   },
   {
     "id": "H17",
@@ -177,10 +177,10 @@
     "text": "A holiday tree has 30 ornaments. 12 fall off but 7 are added. How many ornaments now?",
     "answer": 25,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "30 + 12 + 7"
+    "solution": "30 - 12 + 7"
   },
   {
     "id": "H18",
@@ -188,10 +188,10 @@
     "text": "A basket has 28 Easter eggs. Kids take 9 and then add 3 more. How many eggs now?",
     "answer": 22,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "28 + 9 + 3"
+    "solution": "28 - 9 + 3"
   },
   {
     "id": "H19",
@@ -199,10 +199,10 @@
     "text": "A snowman starts with 16 snowballs, loses 5, then gets 4 more added. How many snowballs now?",
     "answer": 15,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "16 + 5 + 4"
+    "solution": "16 - 5 + 4"
   },
   {
     "id": "H20",
@@ -210,21 +210,21 @@
     "text": "A pumpkin patch has 35 pumpkins. Families pick 14 but bring 5 new ones to donate. How many pumpkins?",
     "answer": 26,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "35 - 14 - 5"
+    "solution": "35 - 14 + 5"
   },
   {
     "id": "H21",
     "difficulty": "hard",
     "text": "A child has 22 toy cars, gives away 8, then receives 6 more. How many cars do they have now?",
-    "answer": 20,
+    "answer": 36,
     "operation": [
       "a",
-      "s"
+      "a"
     ],
-    "solution": "22 + 8 - 6"
+    "solution": "22 + 8 + 6"
   },
   {
     "id": "H22",
@@ -232,10 +232,10 @@
     "text": "A toy robot has 19 gears. The child removes 6 and adds 5. How many gears now?",
     "answer": 18,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "19 + 6 - 5"
+    "solution": "19 - 6 + 5"
   },
   {
     "id": "H23",
@@ -243,21 +243,20 @@
     "text": "A kid builds with 30 blocks, uses 12 on a castle, then adds 7 more blocks. How many blocks remain unused?",
     "answer": 25,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "30 + 12 + 7"
+    "solution": "30 - 12 + 7"
   },
   {
     "id": "H24",
     "difficulty": "hard",
     "text": "A toy store sells 16 dolls, still has 28 left, then gets 9 more. How many dolls are now in the store?",
-    "answer": 37,
+    "answer": 53,
     "operation": [
-      "a",
-      "s"
+      "a"
     ],
-    "solution": "16 + 28 + 9"
+    "solution": "44 + 9"
   },
   {
     "id": "H25",
@@ -265,10 +264,10 @@
     "text": "A child has 25 crayons, loses 9, and then gets 4 new crayons. How many crayons remain?",
     "answer": 20,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "25 + 9 - 4"
+    "solution": "25 - 9 + 4"
   },
   {
     "id": "H26",
@@ -276,62 +275,64 @@
     "text": "A racetrack has 32 cars racing. 11 drop out but 6 new cars join. How many cars are racing now?",
     "answer": 27,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "32 - 11 - 6"
+    "solution": "32 - 11 + 6"
   },
   {
     "id": "H27",
     "difficulty": "hard",
     "text": "A child lines up 14 blue cars, 9 red cars, and gives 6 away. How many cars remain?",
-    "answer": 17,
+    "answer": 29,
     "operation": [
-      "s"
+      "a",
+      "a"
     ],
-    "solution": "14 - 9 - 6"
+    "solution": "14 + 9 + 6"
   },
   {
     "id": "H28",
     "difficulty": "hard",
     "text": "A garage has 26 cars, 8 drive away, and 5 arrive. How many cars now?",
-    "answer": 23,
+    "answer": 39,
     "operation": [
       "a",
-      "s"
+      "a"
     ],
-    "solution": "26 - 8 - 5"
+    "solution": "26 + 8 + 5"
   },
   {
     "id": "H29",
     "difficulty": "hard",
     "text": "A boy sees 18 cars on the road, then sees 11 more, but loses sight of 7. How many does he still see?",
-    "answer": 22,
+    "answer": 0,
     "operation": [
-      "a",
+      "s",
       "s"
     ],
-    "solution": "18 + 11 - 7"
+    "solution": "18 - 11 - 7"
   },
   {
     "id": "H30",
     "difficulty": "hard",
     "text": "A race starts with 29 cars. 12 cars run out of fuel but 4 return after refueling. How many cars race now?",
-    "answer": 21,
+    "answer": 45,
     "operation": [
-      "s"
+      "a",
+      "a"
     ],
-    "solution": "29 - 12 - 4"
+    "solution": "29 + 12 + 4"
   },
   {
     "id": "H31",
     "difficulty": "hard",
     "text": "A zoo has 34 animals. They move 12 to a new area and add 9 new animals. How many animals now?",
-    "answer": 31,
+    "answer": 43,
     "operation": [
       "a"
     ],
-    "solution": "34 + 12 - 9"
+    "solution": "34 + 9"
   },
   {
     "id": "H32",
@@ -339,18 +340,19 @@
     "text": "A pond has 21 ducks. 8 swim away, then 6 return. How many ducks now?",
     "answer": 19,
     "operation": [
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "21 - 8 - 6"
+    "solution": "21 - 8 + 6"
   },
   {
     "id": "H33",
     "difficulty": "hard",
     "text": "A farmer collects 28 eggs, gives away 9, and finds 7 more in the barn. How many eggs does he have?",
-    "answer": 26,
+    "answer": 44,
     "operation": [
       "a",
-      "s"
+      "a"
     ],
     "solution": "28 + 9 + 7"
   },
@@ -360,9 +362,10 @@
     "text": "A dog walker has 17 dogs, 6 go home, and 3 new ones join. How many dogs now?",
     "answer": 14,
     "operation": [
+      "s",
       "a"
     ],
-    "solution": "17 - 6 - 3"
+    "solution": "17 - 6 + 3"
   },
   {
     "id": "H35",
@@ -370,10 +373,10 @@
     "text": "A turtle sees 20 fish, 9 swim away, then 4 more appear. How many fish does it see now?",
     "answer": 15,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "20 + 9 - 4"
+    "solution": "20 - 9 + 4"
   },
   {
     "id": "H36",
@@ -381,10 +384,10 @@
     "text": "An astronaut collects 27 samples, loses 11, then finds 5 more. How many samples remain?",
     "answer": 21,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "27 + 11 + 5"
+    "solution": "27 - 11 + 5"
   },
   {
     "id": "H37",
@@ -392,10 +395,10 @@
     "text": "A moon rover has 18 batteries, uses 7, then receives 4 more. How many batteries now?",
     "answer": 15,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "18 + 7 - 4"
+    "solution": "18 - 7 + 4"
   },
   {
     "id": "H38",
@@ -403,20 +406,18 @@
     "text": "A spaceship sees 33 asteroids. 15 drift away and 6 come closer. How many asteroids now?",
     "answer": 24,
     "operation": [
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "33 - 15 - 6"
+    "solution": "33 - 15 + 6"
   },
   {
     "id": "H39",
     "difficulty": "hard",
     "text": "A starship crew counts 12 planets, then sees 14 more, but 9 move out of sight. How many are still visible?",
-    "answer": 17,
-    "operation": [
-      "a",
-      "s"
-    ],
-    "solution": "12 + 14 - 9"
+    "answer": 12,
+    "operation": [],
+    "solution": "12"
   },
   {
     "id": "H40",
@@ -424,10 +425,10 @@
     "text": "A satellite sends 29 signals, loses 13, and then sends 7 more. How many signals total?",
     "answer": 23,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "29 + 13 - 7"
+    "solution": "29 - 13 + 7"
   },
   {
     "id": "H41",
@@ -435,21 +436,21 @@
     "text": "A soccer coach counts 26 cones, removes 8, then adds 5. How many cones now?",
     "answer": 23,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "26 + 8 - 5"
+    "solution": "26 - 8 + 5"
   },
   {
     "id": "H42",
     "difficulty": "hard",
     "text": "A basketball team scores 19 points, then 14 more, but loses 7 points to penalties. How many points count?",
-    "answer": 26,
+    "answer": -2,
     "operation": [
-      "a",
+      "s",
       "s"
     ],
-    "solution": "19 + 14 - 7"
+    "solution": "19 - 14 - 7"
   },
   {
     "id": "H43",
@@ -457,18 +458,18 @@
     "text": "A baseball team has 22 bats, breaks 9, and buys 6 more. How many bats now?",
     "answer": 19,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "22 + 9 - 6"
+    "solution": "22 - 9 + 6"
   },
   {
     "id": "H44",
     "difficulty": "hard",
     "text": "A track meet has 31 runners. 12 finish early and leave, but 8 new runners join. How many runners now?",
-    "answer": 27,
+    "answer": 11,
     "operation": [
-      "a",
+      "s",
       "s"
     ],
     "solution": "31 - 12 - 8"
@@ -477,22 +478,23 @@
     "id": "H45",
     "difficulty": "hard",
     "text": "A goalie blocks 17 shots, then blocks 9 more, but 6 don\u2019t count. How many blocks count?",
-    "answer": 20,
+    "answer": 32,
     "operation": [
+      "a",
       "a"
     ],
-    "solution": "17 + 9 - 6"
+    "solution": "17 + 9 + 6"
   },
   {
     "id": "H46",
     "difficulty": "hard",
     "text": "A child makes 18 holiday cards, gives away 7, then makes 6 more. How many cards total?",
-    "answer": 17,
+    "answer": 31,
     "operation": [
       "a",
-      "s"
+      "a"
     ],
-    "solution": "18 + 7 - 6"
+    "solution": "18 + 7 + 6"
   },
   {
     "id": "H47",
@@ -500,10 +502,10 @@
     "text": "A holiday train set has 24 pieces. 9 go missing, but 5 are found. How many pieces now?",
     "answer": 20,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "24 - 9 - 5"
+    "solution": "24 - 9 + 5"
   },
   {
     "id": "H48",
@@ -511,21 +513,21 @@
     "text": "A basket has 27 candy canes. Kids eat 10 and add 4 more. How many candy canes?",
     "answer": 21,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "27 + 10 + 4"
+    "solution": "27 - 10 + 4"
   },
   {
     "id": "H49",
     "difficulty": "hard",
     "text": "A snowman has 23 snowballs. 12 melt, but 7 new ones are added. How many now?",
-    "answer": 18,
+    "answer": 4,
     "operation": [
-      "a",
+      "s",
       "s"
     ],
-    "solution": "23 + 12 + 7"
+    "solution": "23 - 12 - 7"
   },
   {
     "id": "H50",
@@ -533,10 +535,10 @@
     "text": "A family collects 30 lights for decorating. 14 break, and they buy 8 more. How many lights now?",
     "answer": 24,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "30 + 14 + 8"
+    "solution": "30 - 14 + 8"
   },
   {
     "id": "H51",
@@ -547,7 +549,7 @@
       "a",
       "s"
     ],
-    "solution": "26 - 12 - 9"
+    "solution": "26 + 12 - 9"
   },
   {
     "id": "H52",
@@ -555,18 +557,18 @@
     "text": "A kid builds with 22 blocks, removes 7, then adds 9 more. How many blocks now?",
     "answer": 24,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "22 + 7 + 9"
+    "solution": "22 - 7 + 9"
   },
   {
     "id": "H53",
     "difficulty": "hard",
     "text": "A set of action figures has 18 heroes and 9 villains. The child loses 6 figures. How many remain?",
-    "answer": 21,
+    "answer": 3,
     "operation": [
-      "a",
+      "s",
       "s"
     ],
     "solution": "18 - 9 - 6"
@@ -575,12 +577,12 @@
     "id": "H54",
     "difficulty": "hard",
     "text": "A toy store stocks 28 items, sells 13, then restocks 9. How many toys now?",
-    "answer": 24,
+    "answer": 50,
     "operation": [
       "a",
-      "s"
+      "a"
     ],
-    "solution": "28 - 13 - 9"
+    "solution": "28 + 13 + 9"
   },
   {
     "id": "H55",
@@ -598,21 +600,21 @@
     "text": "A parking lot has 33 cars. 14 leave but 9 arrive. How many cars now?",
     "answer": 28,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "33 - 14 - 9"
+    "solution": "33 - 14 + 9"
   },
   {
     "id": "H57",
     "difficulty": "hard",
     "text": "A kid counts 21 cars on the road, then sees 15 more but loses sight of 8. How many does the kid see now?",
-    "answer": 28,
+    "answer": -2,
     "operation": [
-      "a",
+      "s",
       "s"
     ],
-    "solution": "21 + 15 - 8"
+    "solution": "21 - 15 - 8"
   },
   {
     "id": "H58",
@@ -620,20 +622,21 @@
     "text": "A race has 27 cars. 11 stop for repairs, but 5 return. How many race now?",
     "answer": 21,
     "operation": [
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "27 - 11 - 5"
+    "solution": "27 - 11 + 5"
   },
   {
     "id": "H59",
     "difficulty": "hard",
     "text": "A collector has 19 toy cars, buys 14 more, but gives 8 away. How many cars remain?",
-    "answer": 25,
+    "answer": 41,
     "operation": [
       "a",
-      "s"
+      "a"
     ],
-    "solution": "19 + 14 - 8"
+    "solution": "19 + 14 + 8"
   },
   {
     "id": "H60",
@@ -641,9 +644,10 @@
     "text": "A garage has 28 cars needing repair. Mechanics fix 13, then receive 6 new cars. How many need repair now?",
     "answer": 21,
     "operation": [
+      "s",
       "a"
     ],
-    "solution": "28 - 13 - 6"
+    "solution": "28 - 13 + 6"
   },
   {
     "id": "H61",
@@ -651,16 +655,18 @@
     "text": "A forest has 29 deer. 12 leave for water, then 7 return. How many deer now?",
     "answer": 24,
     "operation": [
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "29 - 12 - 7"
+    "solution": "29 - 12 + 7"
   },
   {
     "id": "H62",
     "difficulty": "hard",
     "text": "A pond has 24 frogs. 9 hop away and 6 new frogs hop in. How many frogs now?",
-    "answer": 21,
+    "answer": 9,
     "operation": [
+      "s",
       "s"
     ],
     "solution": "24 - 9 - 6"
@@ -669,11 +675,12 @@
     "id": "H63",
     "difficulty": "hard",
     "text": "A farm harvests 33 apples. Kids eat 11 and pick 5 more. How many apples remain?",
-    "answer": 27,
+    "answer": 17,
     "operation": [
+      "s",
       "s"
     ],
-    "solution": "33 + 11 - 5"
+    "solution": "33 - 11 - 5"
   },
   {
     "id": "H64",
@@ -684,7 +691,7 @@
       "a",
       "s"
     ],
-    "solution": "17 - 8 - 5"
+    "solution": "17 + 8 - 5"
   },
   {
     "id": "H65",
@@ -692,31 +699,32 @@
     "text": "A cat finds 14 toys, loses 6, then finds 5 more under the couch. How many toys now?",
     "answer": 13,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "14 + 6 + 5"
+    "solution": "14 - 6 + 5"
   },
   {
     "id": "H66",
     "difficulty": "hard",
     "text": "A spaceship crew counts 22 stars, then 19 more, but clouds hide 14. How many stars can they see?",
-    "answer": 27,
+    "answer": -11,
     "operation": [
-      "a"
+      "s",
+      "s"
     ],
-    "solution": "22 + 19 - 14"
+    "solution": "22 - 19 - 14"
   },
   {
     "id": "H67",
     "difficulty": "hard",
     "text": "A comet passes 18 asteroids and then 16 more. 11 drift away. How many remain nearby?",
-    "answer": 23,
+    "answer": -9,
     "operation": [
-      "a",
+      "s",
       "s"
     ],
-    "solution": "18 + 16 - 11"
+    "solution": "18 - 16 - 11"
   },
   {
     "id": "H68",
@@ -724,10 +732,10 @@
     "text": "A space station receives 25 shipments, uses 14, and gets 7 more. How many shipments remain unused?",
     "answer": 18,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "25 + 14 + 7"
+    "solution": "25 - 14 + 7"
   },
   {
     "id": "H69",
@@ -735,17 +743,18 @@
     "text": "A moon lab has 29 tools, breaks 9, and gets 6 replacements. How many tools now?",
     "answer": 26,
     "operation": [
-      "a",
-      "s"
+      "s",
+      "a"
     ],
-    "solution": "29 + 9 - 6"
+    "solution": "29 - 9 + 6"
   },
   {
     "id": "H70",
     "difficulty": "hard",
     "text": "A rover collects 31 samples, sends 15 to Earth, then collects 8 more. How many samples does it have now?",
-    "answer": 24,
+    "answer": 54,
     "operation": [
+      "a",
       "a"
     ],
     "solution": "31 + 15 + 8"
