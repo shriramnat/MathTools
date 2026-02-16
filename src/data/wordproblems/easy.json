@@ -125,7 +125,7 @@
     "id": "E13",
     "difficulty": "easy",
     "text": "A baseball player hits 7 balls but misses 2. How many hits does he have?",
-    "answer": 7,
+    "answer": 5,
     "operation": [
       "s"
     ],
@@ -289,7 +289,7 @@
     "operation": [
       "s"
     ],
-    "solution": "5"
+    "solution": "5 - 1"
   },
   {
     "id": "E30",
@@ -299,7 +299,7 @@
     "operation": [
       "a"
     ],
-    "solution": "7 - 1"
+    "solution": "7 + 1"
   },
   {
     "id": "E31",
@@ -319,7 +319,7 @@
     "operation": [
       "a"
     ],
-    "solution": "4 - 2"
+    "solution": "4 + 2"
   },
   {
     "id": "E33",
@@ -411,17 +411,17 @@
     "operation": [
       "a"
     ],
-    "solution": ""
+    "solution": "1 + 2"
   },
   {
     "id": "E42",
     "difficulty": "easy",
     "text": "Numberblock Four splits off 1 block. How many blocks remain?",
-    "answer": 3,
+    "answer": 5,
     "operation": [
-      "s"
+      "a"
     ],
-    "solution": "1"
+    "solution": "4 + 1"
   },
   {
     "id": "E43",
@@ -472,7 +472,7 @@
     "operation": [
       "a"
     ],
-    "solution": "5 - 3"
+    "solution": "5 + 3"
   },
   {
     "id": "E48",
@@ -654,7 +654,7 @@
     "operation": [
       "s"
     ],
-    "solution": "8 + 3"
+    "solution": "8 - 3"
   },
   {
     "id": "E66",
@@ -664,7 +664,7 @@
     "operation": [
       "a"
     ],
-    "solution": "7 - 2"
+    "solution": "7 + 2"
   },
   {
     "id": "E67",
@@ -755,7 +755,7 @@
     "operation": [
       "a"
     ],
-    "solution": "5 - 5"
+    "solution": "5 + 5"
   },
   {
     "id": "Q11",
@@ -815,7 +815,7 @@
     "operation": [
       "a"
     ],
-    "solution": "5 - 5"
+    "solution": "5 + 5"
   },
   {
     "id": "Q22",
@@ -886,7 +886,7 @@
     "operation": [
       "a"
     ],
-    "solution": "2 - 3"
+    "solution": "2 + 3"
   },
   {
     "id": "Q34",
@@ -936,7 +936,7 @@
     "operation": [
       "a"
     ],
-    "solution": "6 - 1"
+    "solution": "6 + 1"
   },
   {
     "id": "Q44",
@@ -982,7 +982,7 @@
     "id": "Q53",
     "difficulty": "easy",
     "text": "A student loses 1 of their 7 pens. How many remain?",
-    "answer": 6,
+    "answer": -6,
     "operation": [
       "s"
     ],
@@ -992,10 +992,9 @@
     "id": "Q54",
     "difficulty": "easy",
     "text": "A child finds 6 pens and gives 1 to a friend. How many remain?",
-    "answer": 5,
+    "answer": 7,
     "operation": [
-      "a",
-      "s"
+      "a"
     ],
     "solution": "6 + 1"
   },
@@ -1058,7 +1057,7 @@
     "operation": [
       "a"
     ],
-    "solution": "5 - 4"
+    "solution": "5 + 4"
   },
   {
     "id": "Q71",
@@ -1148,7 +1147,7 @@
     "operation": [
       "a"
     ],
-    "solution": "3 - 5"
+    "solution": "3 + 5"
   },
   {
     "id": "Q85",
@@ -1371,7 +1370,7 @@
     "operation": [
       "a"
     ],
-    "solution": "2 - 5"
+    "solution": "2 + 5"
   },
   {
     "id": "S17",
@@ -1387,7 +1386,7 @@
     "id": "S18",
     "difficulty": "easy",
     "text": "Scarlett carried 3 pencils to school and borrowed 2 from her friend. How many pencils does she have now?",
-    "answer": 5,
+    "answer": 1,
     "operation": [
       "s"
     ],
@@ -1411,7 +1410,7 @@
     "operation": [
       "s"
     ],
-    "solution": "5"
+    "solution": "5 - 1"
   },
   {
     "id": "S21",
@@ -1419,9 +1418,9 @@
     "text": "Leo built a block tower using 3 red blocks and 3 blue blocks. How many blocks did he use?",
     "answer": 6,
     "operation": [
-      "s"
+      "a"
     ],
-    "solution": "3 - 3"
+    "solution": "3 + 3"
   },
   {
     "id": "S22",
@@ -1461,7 +1460,7 @@
     "operation": [
       "s"
     ],
-    "solution": "5"
+    "solution": "5 - 2"
   },
   {
     "id": "S26",
@@ -1488,11 +1487,11 @@
     "id": "S28",
     "difficulty": "easy",
     "text": "Aubrey ate 2 strawberries from a bowl that had 7. How many are left?",
-    "answer": 5,
+    "answer": 9,
     "operation": [
-      "s"
+      "a"
     ],
-    "solution": "2 - 7"
+    "solution": "2 + 7"
   },
   {
     "id": "S29",
@@ -1553,7 +1552,7 @@
     "operation": [
       "s"
     ],
-    "solution": "6"
+    "solution": "6 - 1"
   },
   {
     "id": "S35",
@@ -1650,11 +1649,11 @@
     "id": "S44",
     "difficulty": "easy",
     "text": "Victoria cut out 6 stars from paper. One fell on the floor. How many are still on her desk?",
-    "answer": 5,
+    "answer": 7,
     "operation": [
-      "s"
+      "a"
     ],
-    "solution": "6"
+    "solution": "6 + 1"
   },
   {
     "id": "S45",
@@ -1705,7 +1704,7 @@
     "operation": [
       "s"
     ],
-    "solution": "7"
+    "solution": "7 - 2"
   },
   {
     "id": "S50",
@@ -1755,7 +1754,7 @@
     "operation": [
       "s"
     ],
-    "solution": "6"
+    "solution": "6 - 1"
   },
   {
     "id": "S55",
@@ -1947,7 +1946,7 @@
     "operation": [
       "s"
     ],
-    "solution": "6"
+    "solution": "6 - 2"
   },
   {
     "id": "S74",
@@ -2038,7 +2037,7 @@
     "operation": [
       "s"
     ],
-    "solution": "7"
+    "solution": "7 - 2"
   },
   {
     "id": "S83",
@@ -2129,10 +2128,9 @@
     "text": "Caroline picked 3 apples and her brother picked 4 apples. How many apples total?",
     "answer": 7,
     "operation": [
-      "a",
-      "s"
+      "a"
     ],
-    "solution": "3 - 4"
+    "solution": "3 + 4"
   },
   {
     "id": "S92",
@@ -2142,17 +2140,17 @@
     "operation": [
       "a"
     ],
-    "solution": "5 - 2"
+    "solution": "5 + 2"
   },
   {
     "id": "S93",
     "difficulty": "easy",
     "text": "Aaliyah ate 2 pieces of candy from her bag of 6. How many pieces remain?",
-    "answer": 4,
+    "answer": 8,
     "operation": [
-      "s"
+      "a"
     ],
-    "solution": "2 - 6"
+    "solution": "2 + 6"
   },
   {
     "id": "S94",
@@ -2254,37 +2252,35 @@
     "operation": [
       "a"
     ],
-    "solution": "3 + 2 - 1"
+    "solution": "3 + 2 + 1"
   },
   {
     "id": "MS4",
     "difficulty": "easy",
-    "text": "Ava planted 5 seeds, then planted 2 more. One didn\u2019t grow. How many grew?",
-    "answer": 6,
+    "text": "Ava planted 5 seeds, then planted 2 more. One didn’t grow. How many grew?",
+    "answer": 8,
     "operation": [
       "a"
     ],
-    "solution": "5 + 2"
+    "solution": "5 + 2 + 1"
   },
   {
     "id": "MS5",
     "difficulty": "easy",
     "text": "Mia drew 3 stars, added 3 more, then erased 2. How many stars remain?",
-    "answer": 4,
+    "answer": -2,
     "operation": [
-      "a",
       "s"
     ],
-    "solution": "3 + 3 + 2"
+    "solution": "3 - 3 - 2"
   },
   {
     "id": "MS6",
     "difficulty": "easy",
     "text": "Ethan packed 2 snacks, then added 2 more, but ate 1. How many snacks are left?",
-    "answer": 3,
+    "answer": 5,
     "operation": [
-      "a",
-      "s"
+      "a"
     ],
     "solution": "2 + 2 + 1"
   },
@@ -2292,21 +2288,19 @@
     "id": "MS7",
     "difficulty": "easy",
     "text": "Sophia had 6 balloons. She gave 2 away and then got 1 more. How many balloons now?",
-    "answer": 5,
+    "answer": 3,
     "operation": [
-      "a",
       "s"
     ],
-    "solution": "6 + 2 + 1"
+    "solution": "6 - 2 - 1"
   },
   {
     "id": "MS8",
     "difficulty": "easy",
     "text": "Oliver built a tower with 4 blocks and added 3 more. Then 2 fell off. How many remain?",
-    "answer": 5,
+    "answer": 9,
     "operation": [
-      "a",
-      "s"
+      "a"
     ],
     "solution": "4 + 3 + 2"
   },
@@ -2314,53 +2308,48 @@
     "id": "MS9",
     "difficulty": "easy",
     "text": "Isabella collected 5 stickers, got 2 more, and used 1 on her notebook. How many stickers does she have?",
-    "answer": 6,
+    "answer": 2,
     "operation": [
-      "a",
       "s"
     ],
-    "solution": "5 + 2 + 1"
+    "solution": "5 - 2 - 1"
   },
   {
     "id": "MS10",
     "difficulty": "easy",
     "text": "Lucas had 7 marbles, lost 2, then found 3 more. How many marbles now?",
-    "answer": 8,
+    "answer": 12,
     "operation": [
-      "a",
-      "s"
+      "a"
     ],
-    "solution": "7 + 2 - 3"
+    "solution": "7 + 2 + 3"
   },
   {
     "id": "MS11",
     "difficulty": "easy",
     "text": "Amelia put 2 cookies on her plate. Her mom added 4 more, and she ate 1. How many are left?",
-    "answer": 5,
+    "answer": 7,
     "operation": [
-      "a",
-      "s"
+      "a"
     ],
     "solution": "2 + 4 + 1"
   },
   {
     "id": "MS12",
     "difficulty": "easy",
-    "text": "Harper filled her jar with 3 pom\u2011poms, then added 3 more. She gave 2 to her friend. How many remain?",
-    "answer": 4,
+    "text": "Harper filled her jar with 3 pom‑poms, then added 3 more. She gave 2 to her friend. How many remain?",
+    "answer": -2,
     "operation": [
-      "a",
       "s"
     ],
-    "solution": "3 + 3 + 2"
+    "solution": "3 - 3 - 2"
   },
   {
     "id": "MS13",
     "difficulty": "easy",
     "text": "Henry drew 4 circles and 2 squares, then erased 1 circle. How many shapes remain?",
-    "answer": 5,
+    "answer": 1,
     "operation": [
-      "a",
       "s"
     ],
     "solution": "4 - 2 - 1"
@@ -2369,12 +2358,11 @@
     "id": "MS14",
     "difficulty": "easy",
     "text": "Evelyn picked 6 blueberries, ate 2, then picked 3 more. How many blueberries now?",
-    "answer": 7,
+    "answer": 11,
     "operation": [
-      "a",
-      "s"
+      "a"
     ],
-    "solution": "6 + 2 - 3"
+    "solution": "6 + 2 + 3"
   },
   {
     "id": "MS15",
@@ -2402,23 +2390,21 @@
     "id": "MS17",
     "difficulty": "easy",
     "text": "Aiden made 4 paper airplanes and 2 more later. One ripped. How many good airplanes remain?",
-    "answer": 5,
+    "answer": 7,
     "operation": [
-      "a",
-      "s"
+      "a"
     ],
-    "solution": "4 + 2"
+    "solution": "4 + 2 + 1"
   },
   {
     "id": "MS18",
     "difficulty": "easy",
     "text": "Scarlett counted 6 bees, 2 flew away, then 3 more arrived. How many bees does she see?",
-    "answer": 7,
+    "answer": 1,
     "operation": [
-      "a",
       "s"
     ],
-    "solution": "6 + 2 - 3"
+    "solution": "6 - 2 - 3"
   },
   {
     "id": "MS19",
@@ -2435,12 +2421,11 @@
     "id": "MS20",
     "difficulty": "easy",
     "text": "Aria picked 5 flowers and then 2 more. One wilted. How many good flowers remain?",
-    "answer": 6,
+    "answer": 8,
     "operation": [
-      "a",
-      "s"
+      "a"
     ],
-    "solution": "5 + 2"
+    "solution": "5 + 2 + 1"
   },
   {
     "id": "MS21",
@@ -2489,12 +2474,11 @@
     "id": "MS25",
     "difficulty": "easy",
     "text": "Wyatt had 6 toy ships, lost 3, found 2 more. How many ships now?",
-    "answer": 5,
+    "answer": 11,
     "operation": [
-      "a",
-      "s"
+      "a"
     ],
-    "solution": "6 + 3 - 2"
+    "solution": "6 + 3 + 2"
   },
   {
     "id": "MS26",
@@ -2510,22 +2494,21 @@
     "id": "MS27",
     "difficulty": "easy",
     "text": "James bought 3 muffins, ate 1, then bought 2 more. How many muffins does he have?",
-    "answer": 4,
+    "answer": 6,
     "operation": [
-      "a",
-      "s"
+      "a"
     ],
-    "solution": "3 + 1 - 2"
+    "solution": "3 + 1 + 2"
   },
   {
     "id": "MS28",
     "difficulty": "easy",
     "text": "Aubrey picked 7 leaves, dropped 2, and picked 1 more. How many leaves now?",
-    "answer": 6,
+    "answer": 4,
     "operation": [
       "s"
     ],
-    "solution": "7 + 2 - 1"
+    "solution": "7 - 2 - 1"
   },
   {
     "id": "MS29",
@@ -2542,20 +2525,19 @@
     "id": "MS30",
     "difficulty": "easy",
     "text": "Eleanor found 5 shells and 3 more later. One cracked. How many shells remain?",
-    "answer": 7,
+    "answer": 9,
     "operation": [
       "a"
     ],
-    "solution": "5 + 3"
+    "solution": "5 + 3 + 1"
   },
   {
     "id": "MS71",
     "difficulty": "easy",
     "text": "Nicholas had 3 books, got 4 more, then returned 1. How many books now?",
-    "answer": 6,
+    "answer": 8,
     "operation": [
-      "a",
-      "s"
+      "a"
     ],
     "solution": "3 + 4 + 1"
   },
@@ -2584,12 +2566,11 @@
     "id": "MS74",
     "difficulty": "easy",
     "text": "Hailey collected 6 pinecones, dropped 2, then found 1 more. How many pinecones now?",
-    "answer": 5,
+    "answer": 3,
     "operation": [
-      "a",
       "s"
     ],
-    "solution": "6 + 2 - 1"
+    "solution": "6 - 2 - 1"
   },
   {
     "id": "MS75",
